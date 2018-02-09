@@ -22,6 +22,10 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication
 
+- **Xingliang Yuan**, Jian Weng, Cong Wang, and Kui Ren, "Secure Integrated Circuit Design via Hybrid Cloud", **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
+
+- Jie Zhu, Qi Li, Cong Wang, **Xingliang Yuan**, Qian Wang, and Kui Ren, "Enabling Generic, Verifiable, and Secure Data Search in Cloud Services",  **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
+
 - Xiaoting Tang, Cong Wang, **Xingliang Yuan**, and Qian Wang, "Non-Interactive Privacy-Preserving Truth Discovery in Crowd Sensing Applications", In the _37th International Conference on Computer Communications_ (**_INFOCOM'18_**), _Honolulu, HI, USA, 2018. (Acceptance ratio: 309/1606 = 19.2%)_
  
 - Yifeng Zheng, Huayi Duan, **Xingliang Yuan**, and Cong Wang, "Privacy-Aware and Efficient Mobile Crowdsensing with Truth Discovery", **_IEEE Transactions on Dependable and Secure Computing_** (**_TDSC_**), Accepted, 2017.
@@ -70,13 +74,13 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Teaching
 
-- Semester S1, FIT3073: [Software Security](https://monash.edu/pubs/2017handbooks/units/FIT3173.html);
+- Semester S1, FIT3173: [Software Security](https://monash.edu/pubs/2017handbooks/units/FIT3173.html);
 
 ---
 
 ### Service
 
-- TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018.
+- TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html).
 - Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Security and Communication Networks; ACM CODASPY 2017, ISPEC 2017.
 - Departmental Research Education Committee Member, CS Dept., CityU HK, 2014 - 2016.
 - Volunteer: INFOCOM 2015; [ASI 2014, Information Security and Privacy in Social Networks and Cloud Computing](http://conference.cs.cityu.edu.hk/asi14/index.htm).
