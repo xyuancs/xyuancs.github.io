@@ -16,11 +16,13 @@ I am a Lecturer in the [Faculty of Information Technology](https://www.monash.e
 My research interests include cloud security, network security, mobile security, and hardware security, with the recent focus on search over encrypted data, and network function virtualization security. My research is currently supported by the  government, university, as well as industry sectors, including Hong Kong Innovation and Technology Commission, Monash University, Oceania Cyber Security Centre, Microsoft Azure, and Collinstar Capital.
 
 <br />
-I am always looking for outstanding students; please email me your CV and supporting documents. More details on PhD applications can be found [here](http://www.monash.edu/graduate-research/future-students/apply). 
+I am always looking for outstanding students; please email me your CV and supporting documents. More details on PhD applications can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://www.monash.edu/graduate-research/future-students/support/international-students/china-scholarship-council), and [here](https://xyuancs.github.io/PhD-adv.md). 
 
 ---
 
 ### Recent Publication
+
+- **Xingliang Yuan**, Huayi Duan, and Cong Wang, "Assuring String Pattern Matching in Outsourced Middleboxes", **_IEEE/ACM Transactions on Networking_** (**_ToN_**), Accepted, 2018.
 
 - **Xingliang Yuan**, Jian Weng, Cong Wang, and Kui Ren, "Secure Integrated Circuit Design via Hybrid Cloud", **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
 
@@ -80,8 +82,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Service
 
-- TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html).
-- Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Security and Communication Networks; ACM CODASPY 2017, ISPEC 2017.
+- TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Globecom 2018.
+- Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Security and Communication Networks; ACM CODASPY 2017, ISPEC 2017, SecureComm2018.
 - Departmental Research Education Committee Member, CS Dept., CityU HK, 2014 - 2016.
 - Volunteer: INFOCOM 2015; [ASI 2014, Information Security and Privacy in Social Networks and Cloud Computing](http://conference.cs.cityu.edu.hk/asi14/index.htm).
 
