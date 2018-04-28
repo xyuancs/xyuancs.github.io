@@ -13,7 +13,7 @@ image:
 I am a Lecturer in the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings), and affiliated with the [Monash Cybersecurity Lab](http://www.monash.edu/cybersecurity-lab). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) under the direction of the incomparable [Cong Wang](http://www.cs.cityu.edu.hk/~congwang/) in 2016.
 
 <br />
-My research interests include cloud security, network security, mobile security, and hardware security, with the recent focus on search over encrypted data, and network function virtualization security. My research is currently supported by the  government, university, as well as industry sectors, including Hong Kong Innovation and Technology Commission, Monash University, Oceania Cyber Security Centre, Microsoft Azure, and Collinstar Capital.
+My research interests include cloud and network security with recent focus on encrypted search and secure networked systems. My research is currently supported by government, university, as well as industry sectors, including Hong Kong Innovation and Technology Commission, Monash University, Oceania Cyber Security Centre, Microsoft Azure, and Collinstar Capital.
 
 <br />
 I am always looking for outstanding students; please email me your CV and supporting documents. More details on PhD applications can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://www.monash.edu/graduate-research/future-students/support/international-students/china-scholarship-council), and [here](https://xyuancs.github.io/PhD-adv.md). 
@@ -21,6 +21,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 ---
 
 ### Recent Publication
+
+- Yu Guo, Cong Wang, **Xingliang Yuan**, and Xiaohua Jia, "Enabling Privacy-Preserving Header Matching for Outsourced Middleboxes", In the _26th IEEE/ACM International Symposium on Quality of Service_ (**_IWQoS'18_**), _Banff, Alberta, Canada, 2017. (Acceptance ratio: 26/125 = 20.8%)_
 
 - **Xingliang Yuan**, Huayi Duan, and Cong Wang, "Assuring String Pattern Matching in Outsourced Middleboxes", **_IEEE/ACM Transactions on Networking_** (**_ToN_**), Accepted, 2018.
 
@@ -76,14 +78,14 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Teaching
 
-- Semester S1, FIT3173: [Software Security](https://monash.edu/pubs/2017handbooks/units/FIT3173.html);
+- FIT3173, Semester S1 2018: [Software Security](https://monash.edu/pubs/2017handbooks/units/FIT3173.html);
 
 ---
 
 ### Service
 
 - TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Globecom 2018.
-- Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Security and Communication Networks; ACM CODASPY 2017, ISPEC 2017, SecureComm2018.
+- Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Security and Communication Networks; CODASPY 2017, ISPEC 2017, SecureComm2018.
 - Departmental Research Education Committee Member, CS Dept., CityU HK, 2014 - 2016.
 - Volunteer: INFOCOM 2015; [ASI 2014, Information Security and Privacy in Social Networks and Cloud Computing](http://conference.cs.cityu.edu.hk/asi14/index.htm).
 
