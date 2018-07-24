@@ -89,8 +89,9 @@ I am always looking for outstanding students; please email me your CV and suppor
 ### Service
 
 - TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Globecom 2018.
-- Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Security and Communication Networks; CODASPY 2017, ISPEC 2017, SecureComm2018.
-- Departmental Research Education Committee Member, CS Dept., CityU HK, 2014 - 2016.
+- Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Journal of Communications and Networks, Security and Communication Networks; CODASPY 2017, ISPEC 2017, SecureComm2018.
+- Lead coordinator for [CySCA challenge](https://www.cyberchallenge.com.au), Monash FIT.
+- Departmental research education committee member, CS Dept., CityU HK, 2014 - 2016.
 - Volunteer: INFOCOM 2015; [ASI 2014, Information Security and Privacy in Social Networks and Cloud Computing](http://conference.cs.cityu.edu.hk/asi14/index.htm).
 
 ---
