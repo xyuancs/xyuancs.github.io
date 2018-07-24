@@ -22,7 +22,11 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication
 
-- Yu Guo, Cong Wang, **Xingliang Yuan**, and Xiaohua Jia, "Enabling Privacy-Preserving Header Matching for Outsourced Middleboxes", In the _26th IEEE/ACM International Symposium on Quality of Service_ (**_IWQoS'18_**), _Banff, Alberta, Canada, 2017. (Acceptance ratio: 26/125 = 20.8%)_
+- Shi-Feng Sun, **Xingliang Yuan**, Joseph Liu, Ron Steinfeld, Amin Sakzad, Viet Vo, and Surya Nepal, "Practical Backward-Secure Searchable Encryption from Symmetric Puncturable Encryption", In the _25th ACM Conference on Computer and Communications Security_ (**_CCS'18_**), _Toronto, Canada, 2018. (Acceptance ratio: 134/809 = 16.6%)_
+
+- Helei Cui, **Xingliang Yuan**, Yifeng Zheng and Cong Wang, "Towards Encrypted In-Network Storage Services with Secure Near-Duplicate Detection", **_IEEE Transactions on Services Computing_** (**_TSC_**), Accepted, 2018.
+
+- Yu Guo, Cong Wang, **Xingliang Yuan**, and Xiaohua Jia, "Enabling Privacy-Preserving Header Matching for Outsourced Middleboxes", In the _26th IEEE/ACM International Symposium on Quality of Service_ (**_IWQoS'18_**), _Banff, Alberta, Canada, 2018. (Acceptance ratio: 26/125 = 20.8%)_
 
 - **Xingliang Yuan**, Huayi Duan, and Cong Wang, "Assuring String Pattern Matching in Outsourced Middleboxes", **_IEEE/ACM Transactions on Networking_** (**_ToN_**), Accepted, 2018.
 
@@ -93,6 +97,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Invited Talk
 
+- "Encrypted Search: Advances and Beyond", at Nanjing University of Science and Technology, June 2018
 - "Private and Versatile Search over Very Large Encrypted Datasets", at CityU-CS Research Student Workshop, June 2017
 - "Towards Secure Outsourced Middleboxes", at Monash University, December 2016
 - "Searchable Encryption in Secure Network Function Outsourcing", at Jinan University, April 2016
