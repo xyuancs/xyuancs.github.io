@@ -22,6 +22,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication
 
+-  Helei Cui, Cong Wang, Yu Hua, Yuefeng Du, and **Xingliang Yuan**, "A Bandwidth-Efficient Middleware for Encrypted Deduplication", in the _2018 IEEE Conference on Dependable and Secure Computing_ (**_DSC'18_**), _Kaohsiung, Taiwan, 2018._ 
+
 - Shi-Feng Sun, **Xingliang Yuan**, Joseph Liu, Ron Steinfeld, Amin Sakzad, Viet Vo, and Surya Nepal, "Practical Backward-Secure Searchable Encryption from Symmetric Puncturable Encryption", In the _25th ACM Conference on Computer and Communications Security_ (**_CCS'18_**), _Toronto, Canada, 2018. (Acceptance ratio: 134/809 = 16.6%)_
 
 - Helei Cui, **Xingliang Yuan**, Yifeng Zheng and Cong Wang, "Towards Encrypted In-Network Storage Services with Secure Near-Duplicate Detection", **_IEEE Transactions on Services Computing_** (**_TSC_**), Accepted, 2018.
