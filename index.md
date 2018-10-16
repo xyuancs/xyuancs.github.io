@@ -13,7 +13,7 @@ image:
 I am a Lecturer in the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings), and affiliated with the [Monash Cybersecurity Lab](http://www.monash.edu/cybersecurity-lab). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) under the direction of the incomparable [Cong Wang](http://www.cs.cityu.edu.hk/~congwang/) in 2016.
 
 <br />
-My research interests include cloud and network security with recent focus on encrypted search and secure networked systems. My research is currently supported by government, university, as well as industry sectors, including Hong Kong Innovation and Technology Commission, Monash University, Oceania Cyber Security Centre, Microsoft Azure, and Collinstar Capital.
+My research interests include cloud and network security with recent focus on encrypted search and secure networked systems. My research is currently supported by government, university, as well as industry sectors, including Hong Kong Innovation and Technology Commission, Monash University, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, and Collinstar Capital.
 
 <br />
 I am always looking for outstanding students; please email me your CV and supporting documents. More details on PhD applications can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://www.monash.edu/graduate-research/future-students/support/international-students/china-scholarship-council), and [here](https://xyuancs.github.io/PhD-adv.md). 
@@ -21,6 +21,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 ---
 
 ### Recent Publication
+
+- Chengjun Cai, Jian Weng, **Xingliang Yuan**, and Cong Wang, "Enabling Reliable Keyword Search in Encrypted Decentralized Storage with Fairness", **_IEEE Transactions on Dependable and Secure Computing_** (**_TDSC_**), Accepted, 2018.
 
 - Songrui Wu, Qi Li, Guoliang Li, Dong Yuan, **Xingliang Yuan**, and Cong Wang, "ServeDB: Secure, Verifiable, and Efficient Range Queries on Outsourced Database",  In the _35th IEEE International Conference on Data Engineering_ (**_ICDE'19_**), _Macau SAR, China, 2019._
 
@@ -49,7 +51,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 ### Supervision/Co-supervision
 
 - PhD students: Viet Vo (Monash/Data61); Shangqi Lai (Monash/Data61); Lei Xu (Visiting Student from NJUST);
-- Undergraduate students: Wenkai Gong; Yixun (Robin) Liu;
+- Undergraduate students: Wenkai Gong; Yixuan (Robin) Liu;
 
 ---
 
