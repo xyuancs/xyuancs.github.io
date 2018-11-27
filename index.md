@@ -1,7 +1,7 @@
 ---
 layout: home2
 description: "Xingliang Yuan's website"
-tags: [Jekyll, theme, responsive, template, CityU, yuanxingliang]
+tags: [CityU, Monash, FIT, cybersecurity, yuanxingliang]
 image:
   feature: mountain.jpg
 ---
@@ -13,7 +13,7 @@ image:
 I am a Lecturer in the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings), and affiliated with the [Monash Cybersecurity Lab](http://www.monash.edu/cybersecurity-lab). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) under the direction of the incomparable [Cong Wang](http://www.cs.cityu.edu.hk/~congwang/) in 2016.
 
 <br />
-My research interests include cloud and network security with recent focus on encrypted search and secure networked systems. My research is currently supported by government, university, as well as industry sectors, including Hong Kong Innovation and Technology Commission, Monash University, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, and Collinstar Capital.
+My research interests include cloud and network security with recent focus on encrypted search and secure networked systems. My research is currently supported by Monash Infrastructure, Monash Faculty of IT, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, and Collinstar Capital.
 
 <br />
 I am always looking for outstanding students; please email me your CV and supporting documents. More details on PhD applications can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://www.monash.edu/graduate-research/future-students/support/international-students/china-scholarship-council), and [here](https://xyuancs.github.io/PhD-adv.md). 
@@ -21,6 +21,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 ---
 
 ### Recent Publication
+
+- Yu Guo, **Xingliang Yuan**, Xinyu Wang, Cong Wang, Baochun Li, and Xiaohua Jia, "Enabling Encrypted Rich Queries in Distributed Key-value Stores", **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
 
 - Chengjun Cai, Jian Weng, **Xingliang Yuan**, and Cong Wang, "Enabling Reliable Keyword Search in Encrypted Decentralized Storage with Fairness", **_IEEE Transactions on Dependable and Secure Computing_** (**_TDSC_**), Accepted, 2018.
 
@@ -63,11 +65,10 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Service
 
+- Organizing committee: [IEEE DSC 2019](https://conference.cs.cityu.edu.hk/dsc2019/index.html)(Experience and Practice Track Co-Chair), [ProvSec 2019](https://www.monash.edu/provsec2019)(Publicity Co-Chair).
 - TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Globecom 2018.
 - Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Journal of Communications and Networks, Security and Communication Networks; CODASPY 2017, ISPEC 2017, SecureComm 2018, INFOCOM 2019.
 - Lead coordinator for [CySCA challenge](https://www.cyberchallenge.com.au), Monash FIT.
-- Departmental research education committee member, CS Dept., CityU HK, 2014 - 2016.
-- Volunteer: INFOCOM 2015; [ASI 2014, Information Security and Privacy in Social Networks and Cloud Computing](http://conference.cs.cityu.edu.hk/asi14/index.htm).
 
 ---
 
