@@ -22,6 +22,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication
 
+- Lei Xu, **Xingliang Yuan**, Cong Wang, Qian Wang, and Chungen Xu, "Hardening Database Padding for Searchable Encryption", In the _38th International Conference on Computer Communications_ (**_INFOCOM'19_**), _Paris, France, 2019. (Acceptance ratio: 288/1464 = 19.7%)_
+
 - Yu Guo, **Xingliang Yuan**, Xinyu Wang, Cong Wang, Baochun Li, and Xiaohua Jia, "Enabling Encrypted Rich Queries in Distributed Key-value Stores", **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
 
 - Chengjun Cai, Jian Weng, **Xingliang Yuan**, and Cong Wang, "Enabling Reliable Keyword Search in Encrypted Decentralized Storage with Fairness", **_IEEE Transactions on Dependable and Secure Computing_** (**_TDSC_**), Accepted, 2018.
