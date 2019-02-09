@@ -20,7 +20,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ---
 
-### Recent Publication
+### Recent Selected Publication
 
 - Lei Xu, **Xingliang Yuan**, Cong Wang, Qian Wang, and Chungen Xu, "Hardening Database Padding for Searchable Encryption", In the _38th International Conference on Computer Communications_ (**_INFOCOM'19_**), _Paris, France, 2019. (Acceptance ratio: 288/1464 = 19.7%)_
 
@@ -28,27 +28,12 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 - Chengjun Cai, Jian Weng, **Xingliang Yuan**, and Cong Wang, "Enabling Reliable Keyword Search in Encrypted Decentralized Storage with Fairness", **_IEEE Transactions on Dependable and Secure Computing_** (**_TDSC_**), Accepted, 2018.
 
-- Songrui Wu, Qi Li, Guoliang Li, Dong Yuan, **Xingliang Yuan**, and Cong Wang, "ServeDB: Secure, Verifiable, and Efficient Range Queries on Outsourced Database",  In the _35th IEEE International Conference on Data Engineering_ (**_ICDE'19_**), _Macau SAR, China, 2019._
-
-- Huayi Duan, Yifeng Zheng, Cong Wang, and **Xingliang Yuan**, "Treasure Collection on Foggy Islands: Building Secure Network Archives for Internet of Things", **_IEEE Internet of Things Journal_**, Accepted, 2018.
-
--  Helei Cui, Cong Wang, Yu Hua, Yuefeng Du, and **Xingliang Yuan**, "A Bandwidth-Efficient Middleware for Encrypted Deduplication", in the _2018 IEEE Conference on Dependable and Secure Computing_ (**_DSC'18_**), _Kaohsiung, Taiwan, 2018._ 
-
 - Shi-Feng Sun, **Xingliang Yuan**, Joseph Liu, Ron Steinfeld, Amin Sakzad, Viet Vo, and Surya Nepal, "Practical Backward-Secure Searchable Encryption from Symmetric Puncturable Encryption", In the _25th ACM Conference on Computer and Communications Security_ (**_CCS'18_**), _Toronto, Canada, 2018. (Acceptance ratio: 134/809 = 16.6%)_
-
-- Helei Cui, **Xingliang Yuan**, Yifeng Zheng and Cong Wang, "Towards Encrypted In-Network Storage Services with Secure Near-Duplicate Detection", **_IEEE Transactions on Services Computing_** (**_TSC_**), Accepted, 2018.
-
-- Yu Guo, Cong Wang, **Xingliang Yuan**, and Xiaohua Jia, "Enabling Privacy-Preserving Header Matching for Outsourced Middleboxes", In the _26th IEEE/ACM International Symposium on Quality of Service_ (**_IWQoS'18_**), _Banff, Alberta, Canada, 2018. (Acceptance ratio: 26/125 = 20.8%)_
 
 - **Xingliang Yuan**, Huayi Duan, and Cong Wang, "Assuring String Pattern Matching in Outsourced Middleboxes", **_IEEE/ACM Transactions on Networking_** (**_ToN_**), Accepted, 2018.
 
 - **Xingliang Yuan**, Jian Weng, Cong Wang, and Kui Ren, "Secure Integrated Circuit Design via Hybrid Cloud", **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
 
-- Jie Zhu, Qi Li, Cong Wang, **Xingliang Yuan**, Qian Wang, and Kui Ren, "Enabling Generic, Verifiable, and Secure Data Search in Cloud Services",  **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
-
-- Xiaoting Tang, Cong Wang, **Xingliang Yuan**, and Qian Wang, "Non-Interactive Privacy-Preserving Truth Discovery in Crowd Sensing Applications", In the _37th International Conference on Computer Communications_ (**_INFOCOM'18_**), _Honolulu, HI, USA, 2018. (Acceptance ratio: 309/1606 = 19.2%)_
- 
-- Yifeng Zheng, Huayi Duan, **Xingliang Yuan**, and Cong Wang, "Privacy-Aware and Efficient Mobile Crowdsensing with Truth Discovery", **_IEEE Transactions on Dependable and Secure Computing_** (**_TDSC_**), Accepted, 2017.
 
 ---
 
@@ -62,14 +47,15 @@ I am always looking for outstanding students; please email me your CV and suppor
 ### Teaching
 
 - FIT3173, Semester S1 2018: [Software Security](https://monash.edu/pubs/2017handbooks/units/FIT3173.html);
+- FIT3173, Semester S1 2019: [Software Security](http://monash.edu.au/pubs/2019handbooks/units/FIT3173.html);
 
 ---
 
 ### Service
 
-- Organizing committee: [IEEE DSC 2019](https://conference.cs.cityu.edu.hk/dsc2019/index.html)(Experience and Practice Track Co-Chair), [ProvSec 2019](https://www.monash.edu/provsec2019)(Publicity Co-Chair).
-- TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Globecom 2018.
-- Reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Journal of Communications and Networks, Security and Communication Networks; CODASPY 2017, ISPEC 2017, SecureComm 2018, INFOCOM 2019.
+- Organizing committee: [IEEE DSC 2019](https://conference.cs.cityu.edu.hk/dsc2019/index.html) (Experience and Practice Track Co-Chair), [ProvSec 2019](https://www.monash.edu/provsec2019) (Publicity Co-Chair).
+- TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017, IWQoS 2017,  SecureComm 2017, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Globecom 2018, Trustcom 2019.
+- Invited reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal, Journal of Communications and Networks, Security and Communication Networks; CODASPY 2017, ISPEC 2017, SecureComm 2018, INFOCOM 2019.
 - Lead coordinator for [CySCA challenge](https://www.cyberchallenge.com.au), Monash FIT.
 
 ---
