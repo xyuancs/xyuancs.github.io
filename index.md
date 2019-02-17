@@ -26,8 +26,6 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 - Yu Guo, **Xingliang Yuan**, Xinyu Wang, Cong Wang, Baochun Li, and Xiaohua Jia, "Enabling Encrypted Rich Queries in Distributed Key-value Stores", **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
 
-- Chengjun Cai, Jian Weng, **Xingliang Yuan**, and Cong Wang, "Enabling Reliable Keyword Search in Encrypted Decentralized Storage with Fairness", **_IEEE Transactions on Dependable and Secure Computing_** (**_TDSC_**), Accepted, 2018.
-
 - Shi-Feng Sun, **Xingliang Yuan**, Joseph Liu, Ron Steinfeld, Amin Sakzad, Viet Vo, and Surya Nepal, "Practical Backward-Secure Searchable Encryption from Symmetric Puncturable Encryption", In the _25th ACM Conference on Computer and Communications Security_ (**_CCS'18_**), _Toronto, Canada, 2018. (Acceptance ratio: 134/809 = 16.6%)_
 
 - **Xingliang Yuan**, Huayi Duan, and Cong Wang, "Assuring String Pattern Matching in Outsourced Middleboxes", **_IEEE/ACM Transactions on Networking_** (**_ToN_**), Accepted, 2018.
