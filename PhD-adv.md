@@ -25,7 +25,7 @@ The required expertise includes:
 
 - Outstanding English to be eligible for department funding, e.g., IELTS 6.5 overall (no band less than 6.0), TOEFL IBT 79 + (Reading 13, Listening 12, Speaking 18 & Writing 21)
 
-- GPA: > 80/100
+- GPA: High Distinction (HD) or HD equivalent, or Distinction with strong publication
 
 - Motivation to work beyond the expectations from an average Ph.D. student and publish in top tier venues
 
