@@ -22,9 +22,9 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication
 
-- Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Joseph Liu, Yuhong Liu, and Dongxi Liu, "GraphSE^2: An Encrypted Graph Database for Privacy-Preserving Social Search", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zeland, 2019. (Acceptance ratio: 58/258 = 22.5%)_
+- Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Joseph Liu, Yuhong Liu, and Dongxi Liu, "GraphSE^2: An Encrypted Graph Database for Privacy-Preserving Social Search", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zealand, 2019. (Acceptance ratio: 58/258 = 22.5%)_
 
-- Lei Xu, **Xingliang Yuan**, Ron Steinfeld, Cong Wang, and Chungen Xu, "Multi-Writer Searchable Encryption: An LWE-based Realization and Implementation", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zeland, 2019. (Acceptance ratio: 58/258 = 22.5%)_
+- Lei Xu, **Xingliang Yuan**, Ron Steinfeld, Cong Wang, and Chungen Xu, "Multi-Writer Searchable Encryption: An LWE-based Realization and Implementation", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zealand, 2019. (Acceptance ratio: 58/258 = 22.5%)_
 
 - Lei Xu, **Xingliang Yuan**, Cong Wang, Qian Wang, and Chungen Xu, "Hardening Database Padding for Searchable Encryption", In the _38th International Conference on Computer Communications_ (**_INFOCOM'19_**), _Paris, France, 2019. (Acceptance ratio: 288/1464 = 19.7%)_
 
