@@ -22,6 +22,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication
 
+- Huayi Duan, Cong Wang, **Xingliang Yuan**, Yajin Zhou, Qian Wang, and Kui Ren, "LightBox: Full-stack Protected Stateful Middlebox at Lightning Speed", In the _26th ACM Conference on Computer and Communications Security_ (**_CCS'19_**), _London, UK, 2019_.
+
 - Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Joseph Liu, Yuhong Liu, and Dongxi Liu, "GraphSE^2: An Encrypted Graph Database for Privacy-Preserving Social Search", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zealand, 2019. (Acceptance ratio: 58/258 = 22.5%)_
 
 - Lei Xu, **Xingliang Yuan**, Ron Steinfeld, Cong Wang, and Chungen Xu, "Multi-Writer Searchable Encryption: An LWE-based Realization and Implementation", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zealand, 2019. (Acceptance ratio: 58/258 = 22.5%)_
@@ -58,7 +60,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 - Organizing committee: [IEEE DSC 2019](https://conference.cs.cityu.edu.hk/dsc2019/index.html) (Experience and Practice Track Co-Chair), [ProvSec 2019](https://www.monash.edu/provsec2019) (Publicity Co-Chair).
 - TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017-2019, IWQoS 2017,  SecureComm 2017 & 2019, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Trustcom 2019, [NAS 2019](http://www.nas-conference.org/NAS-2019/index.html).
-- Invited reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Internet of Things Journal,IEEE Communications Magazine, IEEE Networking Letters, Journal of Communications and Networks, Security and Communication Networks.
+- Invited reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Transactions on Industrial Informatics, IEEE Internet of Things Journal,IEEE Communications Magazine, IEEE Networking Letters, Journal of Parallel and Distributed Computing, Journal of Communications and Networks, Security and Communication Networks.
 - Lead coordinator for [CySCA challenge](https://www.cyberchallenge.com.au), Monash FIT.
 
 ---
