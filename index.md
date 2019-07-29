@@ -13,10 +13,10 @@ image:
 I am a Lecturer in the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings), and affiliated with the [Monash Cybersecurity Lab](http://www.monash.edu/cybersecurity-lab). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) under the direction of the incomparable [Cong Wang](http://www.cs.cityu.edu.hk/~congwang/) in 2016.
 
 <br />
-My research mainly focuses on addressing the data privacy and security issues in cloud and networked systems. I am interested in designing new software with data security regulation compliance. I am also interested in inter-disciplinary research with digital health, Internet of things, building information modelling, and machine learning. My research is currently supported by Monash Infrastructure, Monash Faculty of IT, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, and Collinstar Capital.
+My research mainly focuses on addressing the data privacy and security issues in cloud and networked systems. I am interested in designing new software with data security regulation compliance. I am also interested in inter-disciplinary research with digital health, Internet of things, building information modelling, and machine learning. My research is currently supported by Monash Infrastructure, Monash Faculty of IT, CSIRO Data61, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, and Collinstar Capital.
 
 <br />
-I am always looking for outstanding students; please email me your CV and supporting documents. More details on PhD applications can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://www.monash.edu/graduate-research/future-students/support/international-students/china-scholarship-council), and [here](https://xyuancs.github.io/PhD-adv.md). 
+I am always looking for outstanding students; please email me your CV and supporting documents (e.g., transcripts, research statement, english test scores). More details on PhD applications can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://www.monash.edu/graduate-research/future-students/support/international-students/china-scholarship-council), and [here](https://xyuancs.github.io/PhD-adv.md). 
 
 ---
 
@@ -51,14 +51,15 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Teaching
 
-- FIT3173, Semester S1 2018: [Software Security](https://monash.edu/pubs/2017handbooks/units/FIT3173.html);
+- FIT3173, Semester S1 2018: [Software Security](https://monash.edu/pubs/2018handbooks/units/FIT3173.html);
 - FIT3173, Semester S1 2019: [Software Security](http://monash.edu.au/pubs/2019handbooks/units/FIT3173.html);
+- FIT3173, Semester S2 2019: [Network Security](http://www.monash.edu/pubs/2019handbooks/units/FIT3031.html);
 
 ---
 
 ### Service
 
-- Organizing committee: [IEEE DSC 2019](https://conference.cs.cityu.edu.hk/dsc2019/index.html) (Experience and Practice Track Co-Chair), [ProvSec 2019](https://www.monash.edu/provsec2019) (Publicity Co-Chair).
+- Organizing committee: [IEEE DSC 2019](https://conference.cs.cityu.edu.hk/dsc2019/index.html) (Experience and Practice Track Co-Chair), [ProvSec 2019](https://www.monash.edu/provsec2019) (Publicity Co-Chair), [BIMSec 2019](https://www.monash.edu/bimsec) (Co-Chair).
 - TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017-2019, IWQoS 2017,  SecureComm 2017 & 2019, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Trustcom 2019, [NAS 2019](http://www.nas-conference.org/NAS-2019/index.html).
 - Invited reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Transactions on Industrial Informatics, IEEE Internet of Things Journal,IEEE Communications Magazine, IEEE Networking Letters, Journal of Parallel and Distributed Computing, Journal of Communications and Networks, Security and Communication Networks.
 - Lead coordinator for [CySCA challenge](https://www.cyberchallenge.com.au), Monash FIT.
