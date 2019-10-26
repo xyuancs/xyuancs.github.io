@@ -13,7 +13,7 @@ image:
 I am a Lecturer in the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings), and affiliated with the [Monash Cybersecurity Lab](http://www.monash.edu/cybersecurity-lab). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) under the direction of the incomparable [Cong Wang](http://www.cs.cityu.edu.hk/~congwang/) in 2016.
 
 <br />
-My research mainly focuses on addressing the data privacy and security issues in cloud and networked systems. I am also interested in inter-disciplinary research with digital health, Internet of things, building information modelling, and machine learning. My research is supported by Monash Infrastructure, Monash Faculty of IT, CSIRO Data61, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, and Collinstar Capital.
+My research focuses on addressing the data privacy and security issues in cloud and networked systems. I am also interested in inter-disciplinary research with digital health, Internet of things, building information modelling, and machine learning. My research is supported by Monash Infrastructure, Monash Faculty of IT, CSIRO Data61, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, and Collinstar Capital.
 
 <br />
 I am always looking for outstanding students; please email me your CV and supporting documents (e.g., transcripts, research statement, english test scores). More details on PhD applications can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://www.monash.edu/graduate-research/future-students/support/international-students/china-scholarship-council), and [here](https://xyuancs.github.io/PhD-adv.md). 
@@ -22,9 +22,13 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication
 
+- Shangqi Lai, **Xingliang Yuan**, Amin Sakzad, Mahsa Salehi, Joseph K. Liu, and Dongxi Liu, "Enabling Efficient Privacy-Assured Outlier Detection over Encrypted Incremental Datasets", **_IEEE Internet of Things Journal (IoT-J)_**, Accepted, 2019
+
+- **Xingliang Yuan**, Chengjun Cai, Qian Wang, and Qi Li, "Towards A Ledger-assisted Architecture for Secure Query Processing over Distributed IoT Data", In the _IEEE Conference on Dependable and Secure Computing_ (**_IDSC_**), _Hangzhou, China, 2019_. 
+
 - Huayi Duan, Cong Wang, **Xingliang Yuan**, Yajin Zhou, Qian Wang, and Kui Ren, "LightBox: Full-stack Protected Stateful Middlebox at Lightning Speed", In the _26th ACM Conference on Computer and Communications Security_ (**_CCS'19_**), _London, UK, 2019 (Acceptance ratio: 149/933 = 16%)_.
 
-- Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Joseph Liu, Yuhong Liu, and Dongxi Liu, "GraphSE^2: An Encrypted Graph Database for Privacy-Preserving Social Search", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zealand, 2019. (Acceptance ratio: 44/258 = 17%)_
+- Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Joseph K. Liu, Yuhong Liu, and Dongxi Liu, "GraphSE^2: An Encrypted Graph Database for Privacy-Preserving Social Search", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zealand, 2019. (Acceptance ratio: 44/258 = 17%)_
 
 - Lei Xu, **Xingliang Yuan**, Ron Steinfeld, Cong Wang, and Chungen Xu, "Multi-Writer Searchable Encryption: An LWE-based Realization and Implementation", In the _14th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'19_**), _Auckland, New Zealand, 2019. (Acceptance ratio: 44/258 = 17%)_
 
@@ -32,7 +36,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 - Yu Guo, **Xingliang Yuan**, Xinyu Wang, Cong Wang, Baochun Li, and Xiaohua Jia, "Enabling Encrypted Rich Queries in Distributed Key-value Stores", **_IEEE Transactions on Parallel and Distributed Systems_** (**_TPDS_**), Accepted, 2018.
 
-- Shi-Feng Sun, **Xingliang Yuan**, Joseph Liu, Ron Steinfeld, Amin Sakzad, Viet Vo, and Surya Nepal, "Practical Backward-Secure Searchable Encryption from Symmetric Puncturable Encryption", In the _25th ACM Conference on Computer and Communications Security_ (**_CCS'18_**), _Toronto, Canada, 2018. (Acceptance ratio: 134/809 = 16.6%)_
+- Shi-Feng Sun, **Xingliang Yuan**, Joseph K. Liu, Ron Steinfeld, Amin Sakzad, Viet Vo, and Surya Nepal, "Practical Backward-Secure Searchable Encryption from Symmetric Puncturable Encryption", In the _25th ACM Conference on Computer and Communications Security_ (**_CCS'18_**), _Toronto, Canada, 2018. (Acceptance ratio: 134/809 = 16.6%)_
 
 - **Xingliang Yuan**, Huayi Duan, and Cong Wang, "Assuring String Pattern Matching in Outsourced Middleboxes", **_IEEE/ACM Transactions on Networking_** (**_ToN_**), Accepted, 2018.
 
@@ -43,7 +47,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Supervision/Co-supervision
 
-- PhD students: Viet Vo (Monash/Data61); Shangqi Lai (Monash/Data61);
+- PhD students: Viet Vo (Monash/Data61); Shangqi Lai (Monash/Data61); Kassem Bagher (Monash)
 - Master students: Bang Wu (Melbourne U); Xiangwen (Wayne) Yang (Monash); 
 - Graduated UG students: Wenkai Gong (now UG honour student at UNSW); Yixuan (Robin) Liu (now software engineer at Google);
 
