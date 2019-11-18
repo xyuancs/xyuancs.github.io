@@ -72,6 +72,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Invited Talk
 
+- "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", at Imperial College London, Nov 2019
 - "Encrypted Search: Advances and Beyond", at Nanjing University of Science and Technology, June 2018
 - "Private and Versatile Search over Very Large Encrypted Datasets", at CityU-CS Research Student Workshop, June 2017
 - "Towards Secure Outsourced Middleboxes", at Monash University, December 2016
