@@ -58,7 +58,9 @@ I am always looking for outstanding students; please email me your CV and suppor
 - FIT3173, Semester S1 2018: [Software Security](https://monash.edu/pubs/2018handbooks/units/FIT3173.html);
 - FIT3173, Semester S1 2019: [Software Security](http://monash.edu.au/pubs/2019handbooks/units/FIT3173.html);
 - FIT3031, Semester S2 2019: [Network Security](http://www.monash.edu/pubs/2019handbooks/units/FIT3031.html);
-- FIT3173, Semester S2 2020: [Software Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3173.html);
+- FIT3173, Semester S1 2020: [Software Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3173.html);
+- FIT3031, Semester S2 2020: [Network Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3031.html);
+- FIT5037, Semester S2 2020: [Network Security](http://monash.edu.au/pubs/2020handbooks/units/FIT5037.html);
 
 ---
 
