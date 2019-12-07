@@ -76,7 +76,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Invited Talk
 
-- "Hardening Database Padding for Seaarchable Encryption", Keynote speaker at the 13th International Conference on Network and System Security [NSS'19](http://nsclab.org/nss2019/keynote.html), Dec 2019
+- "Hardening Database Padding for Searchable Encryption", Keynote speaker at the 13th International Conference on Network and System Security [NSS'19](http://nsclab.org/nss2019/keynote.html), Dec 2019
 - "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", at Imperial College London, Nov 2019
 - "Encrypted Search: Advances and Beyond", at Nanjing University of Science and Technology, June 2018
 - "Private and Versatile Search over Very Large Encrypted Datasets", at CityU-CS Research Student Workshop, June 2017
