@@ -10,7 +10,7 @@ owner:
   name:           Xingliang Yuan
   avatar:         yxl.jpg
   bio:            When you risk it all, sky is the limit.
-  email:          xyuancs@gmail.com
+  email:          xingling.yuan@monash.edu
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   #twitter: jponttuset
   #linkedin: jponttuset
@@ -30,8 +30,8 @@ links:
   #   url: /cv/
   - title: Publication
     url: /publication/
-  - title: Project
-    url: /project/
+  #- title: Project
+  #  url: /project/
   # - title: Blog
   #   url: /blog/
 
