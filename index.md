@@ -15,6 +15,7 @@ I am a Lecturer in the [Department of Software Systems and Cybersecurity](https
 <br />
 My research focuses on designing innovative protocols, system prototypes (not legacy compatible) to solve the data privacy and security challenges in cloud and networked environments. Recently, I work to bridge the engineering gap in making efficient cryptographic protocols in the ideal world readily deployable, and build system prototypes based on hardware enclaves for a broad spectrum of applications that process large-scale data streams. I am also interested in cybersecurity assisted inter-disciplinary research with digital health, Internet of things, building information modelling, and machine learning. 
 
+<br />
 My research has been supported by Australian Research Council, CSIRO Data61, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, Google Cloud Platform, Monash Infrastructure, Ansen Innovation, and Collinstar Capital.
 
 <br />
