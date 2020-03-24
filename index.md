@@ -13,10 +13,10 @@ image:
 I am a Lecturer in the [Department of Software Systems and Cybersecurity](https://www.monash.edu/it/ssc) of the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings), and also affiliated with the [Monash Cybersecurity Lab](http://www.monash.edu/cybersecurity-lab) and the [Monash Blockchain Technology Centre](https://www.monash.edu/blockchain). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) in 2016. Before that, I worked at [Stromasys S.A.](https://www.stromasys.com), developing and optimising the dynamic instruction translation engine for virtual SPARC and ALPHA servers on the x86 platform. 
 
 <br />
-My research focuses on designing innovative protocols, system prototypes (not legacy compatible) to solve the data privacy and security challenges in cloud and networked environments. Recently, I work to bridge the engineering gap in making efficient cryptographic protocols in the ideal world readily deployable, and build system prototypes based on hardware enclaves for a broad spectrum of applications that process large-scale data streams. I am also interested in cybersecurity assisted inter-disciplinary research with digital health, Internet of things, building information modelling, and machine learning. 
+My research focuses on designing innovative protocols, system prototypes (not legacy compatible) to solve the data privacy and security challenges in cloud and networked environments. Recently, I work to bridge the engineering gap in deploying searchable encryption protocols into practice, and build system prototypes based on hardware enclaves for a broad spectrum of applications that process large-scale data streams. I am also interested in cybersecurity assisted inter-disciplinary research with digital health, Internet of things, building information modelling, and machine learning. 
 
 <br />
-My research has been supported by Australian Research Council, CSIRO Data61, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, Google Cloud Platform, Monash Infrastructure, Ansen Innovation, and Collinstar Capital.
+My research has been supported by Australian Research Council, CSIRO Data61, Oceania Cyber Security Centre, Amazon Web Services, Microsoft Azure, Google Cloud Platform, and Monash Infrastructure.
 
 <br />
 I am always looking for outstanding students; please email me your CV and supporting documents, including transcripts, research statement, english test scores. Details on PhD applications and scholarships can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://data61.csiro.au/en/Our-Network/Students/Scholarship-Program), and [here](https://xyuancs.github.io/PhD-adv.md). 
@@ -24,6 +24,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 ---
 
 ### Recent Selective Publication 
+
+- Viet Vo, Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Surya Nepal, and Joseph K. Liu, "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", In the _18th International Conference on Applied Cryptography and Network Security_ (**_ACNS'20_**), _Rome, Italy, 2020 (Acceptance ratio: 21%)_.
 
 - Huayi Duan, Cong Wang, **Xingliang Yuan**, Yajin Zhou, Qian Wang, and Kui Ren, "LightBox: Full-stack Protected Stateful Middlebox at Lightning Speed", In the _26th ACM Conference on Computer and Communications Security_ (**_CCS'19_**), _London, UK, 2019 (Acceptance ratio: 149/933 = 16%)_.
 
@@ -61,7 +63,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 ### Service
 
 - Organizing committee: [IEEE DSC 2019](https://conference.cs.cityu.edu.hk/dsc2019/index.html) (Experience and Practice Track Co-Chair), [ProvSec 2019](https://www.monash.edu/provsec2019) (Publicity Co-Chair), [BIMSec 2019](https://www.monash.edu/bimsec) (Co-Chair), [ACISP 2020](http://nsclab.org/acisp2020/) (Special issue Co-Chair).
-- TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017-2019, IWQoS 2017,  SecureComm 2017, 2019, 2020, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Trustcom 2019, 2020, [NAS 2019](http://www.nas-conference.org/NAS-2019/index.html), [Cloud S&P 2020](https://www.albany.edu/cloudsp2020/index.html). 
+- TPC member: [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html), Globecom 2017-2019, IWQoS 2017,  [SecureComm](http://securecomm.org) 2017, 2019, 2020, ICCCN 2018, [NSS 2018](http://www4.comp.polyu.edu.hk/~nss2018/index.html), Trustcom 2019, 2020, [NAS 2019](http://www.nas-conference.org/NAS-2019/index.html), [Cloud S&P 2020](https://www.albany.edu/cloudsp2020/index.html), [BlockAPP 2020](https://blockchain.comp.hkbu.edu.hk/blockapp2020/). 
 - Invited reviewer: IEEE Transactions on Dependable and Secure Computing, IEEE Transactions on Information Forensics and Security, IEEE/ACM Transactions on Networking, IEEE Transactions on Computers, IEEE Transactions on Mobile Computing, IEEE Transactions on Parallel and Distributed Systems, IEEE Transactions on Multimedia, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Service Computing, IEEE Transactions on Industrial Informatics, IEEE Internet of Things Journal, IEEE Communications Magazine, IEEE Networking Letters, Journal of Parallel and Distributed Computing, Journal of Communications and Networks.
 - Member of Early Career Academics (ECA) Committee and ECA representative in Faculty Research Committee, Monash FIT. 
 - Lead coordinator for [CySCA challenge](https://www.cyberchallenge.com.au), Monash FIT.
