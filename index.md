@@ -10,10 +10,10 @@ image:
 
 ### Overview
 
-I am a Lecturer in the [Department of Software Systems and Cybersecurity](https://www.monash.edu/it/ssc) of the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings), and also affiliated with the [Monash Cybersecurity Lab](http://www.monash.edu/cybersecurity-lab) and the [Monash Blockchain Technology Centre](https://www.monash.edu/blockchain). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) in 2016. Before that, I worked at [Stromasys S.A.](https://www.stromasys.com), developing and optimising the dynamic instruction translation engine for virtual SPARC and ALPHA servers on the x86 platform. 
+I am a Lecturer in the [Department of Software Systems and Cybersecurity](https://www.monash.edu/it/ssc) of the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) in 2016. Before that, I worked at [Stromasys S.A.](https://www.stromasys.com), developing and optimising the dynamic instruction translation engine for virtual SPARC and ALPHA servers on the x86 platform. 
 
 <br />
-My research focuses on designing innovative protocols, system prototypes (not legacy compatible) to solve the data privacy and security challenges in cloud and networked environments. Recently, I work to bridge the gap in deploying searchable encryption protocols into practice, and build system prototypes based on hardware enclaves for applications that process large-scale data streams. I am also interested in cybersecurity assisted inter-disciplinary research with digital health, Internet of things, building information modelling, and machine learning. 
+My research focuses on designing protocols and systems (not legacy compatible) to solve data privacy and security issues. Recently, I work to bridge the gap in deploying searchable encryption into practice, and build prototypes based on hardware enclaves to securely process data streams. I am also interested in cybersecurity assisted inter-disciplinary research with digital health, building information modelling, and machine learning. 
 
 <br />
 My research is currently supported by Australian Research Council, CSIRO Data61, Oceania Cyber Security Centre, and Google Cloud Platform.
@@ -30,6 +30,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 - Viet Vo, **Xingliang Yuan**,  Shi-Feng Sun, Joseph K Liu, Surya Nepal, and Cong Wang, ["ShieldDB: An Encrypted Document Database with Padding Countermeasures"](https://arxiv.org/pdf/2003.06103.pdf), 2020.
 
 - Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Joseph K Liu, Ron Steinfeld, Amin Sakzad, Dongxi Liu, ["Towards Practical Encrypted Network Traffic Pattern Matching for Secure Middleboxes"](https://arxiv.org/pdf/2001.01848.pdf), 2020
+
+- Bang Wu, Shuo Wang, **Xingliang Yuan**, Cong Wang, Carsten Rudolph, Xiangwen Yang, ["Towards Defeating Misclassification Attacks Against Transfer Learning"](https://arxiv.org/pdf/1908.11230.pdf), 2020
 
 ---
 
@@ -85,7 +87,8 @@ I am always looking for outstanding students; please email me your CV and suppor
   - Trustcom 2019, 2020
   - [NAS 2019](http://www.nas-conference.org/NAS-2019/index.html)
   - [Cloud S&P 2020](https://www.albany.edu/cloudsp2020/index.html)
-  - [BlockAPP 2020](https://blockchain.comp.hkbu.edu.hk/blockapp2020/). 
+  - [BlockAPP 2020](https://blockchain.comp.hkbu.edu.hk/blockapp2020/)
+  - [AsiaCCS 2021](https://asiaccs2021.comp.polyu.edu.hk)
 - Invited reviewer: 
   - IEEE Transactions on Dependable and Secure Computing
   - IEEE Transactions on Information Forensics and Security
@@ -93,11 +96,12 @@ I am always looking for outstanding students; please email me your CV and suppor
   - IEEE Transactions on Computers
   - IEEE Transactions on Mobile Computing
   - IEEE Transactions on Parallel and Distributed Systems
+  - IEEE Transactions on Cloud Computing
   - IEEE Transactions on Multimedia
   - IEEE Transactions on Knowledge and Data Engineering
   - IEEE Transactions on Service Computing
   - IEEE Transactions on Industrial Informatics
-  - IEEE Internet of Things Journal,
+  - IEEE Internet of Things Journal
   - IEEE Communications Magazine
   - IEEE Networking Letters.
 - Faculty service:
