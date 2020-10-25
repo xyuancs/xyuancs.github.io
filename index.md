@@ -26,8 +26,6 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication 
 
-- Xiaoning Liu, Bang Wu, **Xingliang Yuan**, and Xun Yi, "Leia: A Lightweight Cryptographic Neural Network Inference System at the Edge", In the _16th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'21_**), _Hong Kong, China, 2021. (Acceptance ratio in 1st Round: 29/157 = 18%)_
-
 - Viet Vo, Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Surya Nepal, and Joseph K. Liu, "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", In the _18th International Conference on Applied Cryptography and Network Security_ (**_ACNS'20_**), _Rome, Italy, 2020 (Acceptance ratio: 21%)_.
 
 - Huayi Duan, Cong Wang, **Xingliang Yuan**, Yajin Zhou, Qian Wang, and Kui Ren, "LightBox: Full-stack Protected Stateful Middlebox at Lightning Speed", In the _26th ACM Conference on Computer and Communications Security_ (**_CCS'19_**), _London, UK, 2019 (Acceptance ratio: 149/933 = 16%)_.
