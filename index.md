@@ -13,7 +13,7 @@ image:
 I am a Lecturer in the [Department of Software Systems and Cybersecurity](https://www.monash.edu/it/ssc) of the [Faculty of Information Technology](https://www.monash.edu/it) at [Monash University](https://www.monash.edu/it/about-us/our-rankings). I earned my PhD degree from [City University of Hong Kong](http://www.cityu.edu.hk/) in 2016. Before that, I worked at [Stromasys S.A.](https://www.stromasys.com), developing and optimising the dynamic instruction translation engine for virtual SPARC and ALPHA servers on the x86 platform. 
 
 <br />
-My research focuses on designing protocols and systems (not legacy compatible) to solve data privacy and security issues. Recently, I work to bridge the gap in deploying searchable encryption into practice, and build prototypes based on hardware enclaves to securely process data streams. I am also interested in cybersecurity assisted inter-disciplinary research with digital health, building information modelling, and machine learning. 
+I design protocols, systems (not legacy compatible) to address data privacy and security issues in cloud environments. Recently, I strive to bridge the gap in deploying searchable encryption into practice, and build prototypes based on hardware enclaves to securely process data streams. I am also interested in cybersecurity related inter-disciplinary research with machine learning, digital health, and building information modelling. 
 
 <br />
 My research is currently supported by Australian Research Council, CSIRO Data61, Oceania Cyber Security Centre, and Google Cloud Platform.
@@ -21,21 +21,12 @@ My research is currently supported by Australian Research Council, CSIRO Data61,
 <br />
 I am always looking for outstanding students; please email me your CV and supporting documents, including transcripts, research statement, english test scores. Details on PhD applications and scholarships can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://data61.csiro.au/en/Our-Network/Students/Scholarship-Program), and [here](https://xyuancs.github.io/PhD-adv.md). 
 
----
-
-### Preprints 
-
-- Xiaoning Liu, Bang Wu, **Xingliang Yuan**, and Xun Yi, ["Leia: A Lightweight Cryptographic Neural Network Inference System at the Edge"](https://eprint.iacr.org/2020/463.pdf), 2020.
-
-- Viet Vo, **Xingliang Yuan**,  Shi-Feng Sun, Joseph K Liu, Surya Nepal, and Cong Wang, ["ShieldDB: An Encrypted Document Database with Padding Countermeasures"](https://arxiv.org/pdf/2003.06103.pdf), 2020.
-
-- Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Joseph K Liu, Ron Steinfeld, Amin Sakzad, Dongxi Liu, ["Towards Practical Encrypted Network Traffic Pattern Matching for Secure Middleboxes"](https://arxiv.org/pdf/2001.01848.pdf), 2020
-
-- Bang Wu, Shuo Wang, **Xingliang Yuan**, Cong Wang, Carsten Rudolph, Xiangwen Yang, ["Towards Defeating Misclassification Attacks Against Transfer Learning"](https://arxiv.org/pdf/1908.11230.pdf), 2020
 
 ---
 
 ### Recent Publication 
+
+- Xiaoning Liu, Bang Wu, **Xingliang Yuan**, and Xun Yi, "Leia: A Lightweight Cryptographic Neural Network Inference System at the Edge", In the _16th ACM ASIA Conference on Computer and Communications Security_ (**_AsiaCCS'21_**), _Hong Kong, China, 2021. (Acceptance ratio in 1st Round: 29/157 = 18%)_
 
 - Viet Vo, Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Surya Nepal, and Joseph K. Liu, "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", In the _18th International Conference on Applied Cryptography and Network Security_ (**_ACNS'20_**), _Rome, Italy, 2020 (Acceptance ratio: 21%)_.
 
@@ -53,20 +44,21 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Supervision/Co-supervision
 
-- PhD students: Viet Vo (Monash/Data61); Shangqi Lai (Monash/Data61); Kassem Bagher (Monash); Bang Wu (Monash);
-- Master students: Xiangwen (Wayne) Yang (Monash); 
-- Graduated UG students: Yixuan (Robin) Liu (now software engineer at Google);
+- PhD students: Viet Vo (Monash/Data61), Kassem Bagher (Monash), Bang Wu (Monash), Olivia Shen (Monash/Data61); 
+- Master students: Wayne Yang (Monash); 
+- Alumni: Shangqi Lai (now research fellow at Monash); Robin Liu (undergraduate research assistant, now software engineer at Google);
 
 ---
 
 ### Teaching
 
-- FIT3173, Semester S1 2018: [Software Security](https://monash.edu/pubs/2018handbooks/units/FIT3173.html);
-- FIT3173, Semester S1 2019: [Software Security](http://monash.edu.au/pubs/2019handbooks/units/FIT3173.html);
-- FIT3031, Semester S2 2019: [Network Security](http://www.monash.edu/pubs/2019handbooks/units/FIT3031.html);
-- FIT3173, Semester S1 2020: [Software Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3173.html);
-- FIT3031, Semester S2 2020: [Network Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3031.html);
-- FIT5037, Semester S2 2020: [Network Security](http://monash.edu.au/pubs/2020handbooks/units/FIT5037.html);
+- FIT3173, Semester S1 2018: [Software Security](https://monash.edu/pubs/2018handbooks/units/FIT3173.html)
+- FIT3173, Semester S1 2019: [Software Security](http://monash.edu.au/pubs/2019handbooks/units/FIT3173.html)
+- FIT3031, Semester S2 2019: [Network Security](http://www.monash.edu/pubs/2019handbooks/units/FIT3031.html)
+- FIT3173, Semester S1 2020: [Software Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3173.html)
+- FIT3031, Semester S2 2020: [Network Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3031.html)
+- FIT5037, Semester S2 2020: [Network Security](http://monash.edu.au/pubs/2020handbooks/units/FIT5037.html)
+- FIT5124, Semester S1 2021: Advanced Topics in Security
 
 ---
 
@@ -76,19 +68,20 @@ I am always looking for outstanding students; please email me your CV and suppor
   - [IEEE DSC 2019](https://conference.cs.cityu.edu.hk/dsc2019/index.html) (Experience and Practice Track Co-Chair)
   - [ProvSec 2019](https://www.monash.edu/provsec2019) (Publicity Co-Chair)
   - [BIMSec 2019](https://www.monash.edu/bimsec) (Co-Chair)
-  - [ACISP 2020](http://nsclab.org/acisp2020/) (Special issue Co-Chair)
+  - [ACISP 2020](http://nsclab.org/acisp2020/) (Online Conference Chair)
 - TPC member: 
   - [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html)
   - Globecom 2017-2020
   - IWQoS 2017
-  - [SecureComm](http://securecomm.org) 2017, 2019, 2020
+  - [SecureComm](http://securecomm.org) 2017, 2019-2020
   - ICCCN 2018 
   - NSS 2018, 2020
-  - Trustcom 2019, 2020
+  - Trustcom 2019-2020
   - [NAS 2019](http://www.nas-conference.org/NAS-2019/index.html)
   - [Cloud S&P 2020](https://www.albany.edu/cloudsp2020/index.html)
   - [BlockAPP 2020](https://blockchain.comp.hkbu.edu.hk/blockapp2020/)
   - [AsiaCCS 2021](https://asiaccs2021.comp.polyu.edu.hk)
+  - [CCGrid 2021](http://cloudbus.org/ccgrid2021/)
 - Invited reviewer: 
   - IEEE Transactions on Dependable and Secure Computing
   - IEEE Transactions on Information Forensics and Security
@@ -96,14 +89,16 @@ I am always looking for outstanding students; please email me your CV and suppor
   - IEEE Transactions on Computers
   - IEEE Transactions on Mobile Computing
   - IEEE Transactions on Parallel and Distributed Systems
+  - ACM Computing Surveys
   - IEEE Transactions on Cloud Computing
   - IEEE Transactions on Multimedia
   - IEEE Transactions on Knowledge and Data Engineering
   - IEEE Transactions on Service Computing
+  - IEEE Transactions on Network Science and Engineering
   - IEEE Transactions on Industrial Informatics
   - IEEE Internet of Things Journal
   - IEEE Communications Magazine
-  - IEEE Networking Letters.
+  - IEEE Networking Letters
 - Faculty service:
   - Member of Early Career Academics (ECA) Committee and ECA representative in Faculty Research Committee
   - Lead coordinator for Australian National Cybersecurity Challenge [CySCA challenge](https://www.cyberchallenge.com.au) at Monash
@@ -112,11 +107,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Invited Talk
 
-- "SGX-enabled Network Middleboxes at Lightning Speed", Invited speaker at the [CSIRO Data61 Cyber Security Summer School 2020](https://research.csiro.au/csss/), March 2020
-- "Hardening Database Padding for Searchable Encryption", Keynote speaker at the 13th International Conference on Network and System Security [NSS'19](http://nsclab.org/nss2019/keynote.html), December 2019
+- "SGX-enabled Network Middleboxes at Lightning Speed", Invited speaker at the [CSIRO Data61 Cyber Security Summer School 2020](https://research.csiro.au/csss/), Mar 2020
+- "Hardening Database Padding for Searchable Encryption", Keynote speaker at the 13th International Conference on Network and System Security [NSS'19](http://nsclab.org/nss2019/keynote.html), Dec 2019
 - "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", at Imperial College London, Nov 2019
-- "Encrypted Search: Advances and Beyond", at Nanjing University of Science and Technology, June 2018
-- "Private and Versatile Search over Very Large Encrypted Datasets", at CityU-CS Research Student Workshop, June 2017
-- "Towards Secure Outsourced Middleboxes", at Monash University, December 2016
-- "Searchable Encryption in Secure Network Function Outsourcing", at Jinan University, April 2016
 
