@@ -1,7 +1,7 @@
 ---
 layout: home2
 description: "Xingliang Yuan's website"
-tags: [CityU, Monash, FIT, cybersecurity, data security regulation compliance, encrypted database,searchable encryption, intel sgx, data privacy, privacy-preserving machine learning, yuanxingliang]
+tags: [CityU, Monash, FIT, cybersecurity, encrypted database, searchable encryption, intel sgx, data privacy, privacy-preserving machine learning, yuanxingliang]
 image:
   feature: mountain.jpg
 ---
@@ -25,6 +25,12 @@ I am always looking for outstanding students; please email me your CV and suppor
 ---
 
 ### Recent Publication 
+
+- Shangqi Lai, **Xingliang Yuan**, Joseph Liu, Xun Yi, Qi Li, Dongxi Liu, and Nepal Surya, "OblivSketch: Oblivious Network Measurement as a Cloud Service", In the _Network and Distributed System Security Symposium_ (**_NDSS'21_**), _virtually, 2021 (Acceptance ratio: 15%)_.
+
+- Shi-Feng Sun, Ron Steinfeld, Shangqi Lai, **Xingliang Yuan**, Amin Sakzad, Joseph Liu, and Dawu Gu, "Practical Non-Interactive Searchable Encryption with Forward and Backward Privacy", In the _Network and Distributed System Security Symposium_ (**_NDSS'21_**), _virtually, 2021 (Acceptance ratio: 15%)_.
+
+- Viet Vo, Shangqi Lai, **Xingliang Yuan**, Joseph Liu, and Surya Nepal, "Towards Efficient and Strong Backward Private Searchable Encryption with Secure Enclaves", In the _19th International Conference on Applied Cryptography and Network Security_ (**_ACNS'21_**), _Kamakura, Japan, 2021 (First round acceptance ratio: 13/77= 16.8%)_.
 
 - Viet Vo, Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Surya Nepal, and Joseph K. Liu, "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", In the _18th International Conference on Applied Cryptography and Network Security_ (**_ACNS'20_**), _Rome, Italy, 2020 (Acceptance ratio: 21%)_.
 
@@ -56,7 +62,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 - FIT3173, Semester S1 2020: [Software Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3173.html)
 - FIT3031, Semester S2 2020: [Network Security](http://monash.edu.au/pubs/2020handbooks/units/FIT3031.html)
 - FIT5037, Semester S2 2020: [Network Security](http://monash.edu.au/pubs/2020handbooks/units/FIT5037.html)
-- FIT5124, Semester S1 2021: Advanced Topics in Security
+- FIT5124, Semester S1 2021: [Advanced Topics in Security](https://handbook.monash.edu/2021/units/FIT5124)
 
 ---
 
@@ -67,19 +73,18 @@ I am always looking for outstanding students; please email me your CV and suppor
   - [ProvSec 2019](https://www.monash.edu/provsec2019) (Publicity Co-Chair)
   - [BIMSec 2019](https://www.monash.edu/bimsec) (Co-Chair)
   - [ACISP 2020](http://nsclab.org/acisp2020/) (Online Conference Chair)
+  - [ACM AsiaCCS-SCC 2021](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html) (Publicity Chair)
 - TPC member: 
-  - [AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html)
-  - Globecom 2017-2020
-  - IWQoS 2017
+  - [ACM AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html)
+  - IEEE Globecom 2017-2020
+  - IEEE/ACM IWQoS 2017
   - [SecureComm](http://securecomm.org) 2017, 2019-2020
-  - ICCCN 2018 
+  - IEE ICCCN 2018 
   - NSS 2018, 2020
-  - Trustcom 2019-2020
-  - [NAS 2019](http://www.nas-conference.org/NAS-2019/index.html)
-  - [Cloud S&P 2020](https://www.albany.edu/cloudsp2020/index.html)
-  - [BlockAPP 2020](https://blockchain.comp.hkbu.edu.hk/blockapp2020/)
-  - [AsiaCCS 2021](https://asiaccs2021.comp.polyu.edu.hk)
-  - [CCGrid 2021](http://cloudbus.org/ccgrid2021/)
+  - IEE Trustcom 2019-2020
+  - [IEEE NAS 2019](http://www.nas-conference.org/NAS-2019/index.html)
+  - [ACM AsiaCCS 2021](https://asiaccs2021.comp.polyu.edu.hk)
+  - [IEEE/ACM CCGrid 2021](http://cloudbus.org/ccgrid2021/)
 - Invited reviewer: 
   - IEEE Transactions on Dependable and Secure Computing
   - IEEE Transactions on Information Forensics and Security
@@ -103,9 +108,16 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ---
 
+### Award
+
+- Dean's Award for Excellence in Research by an Early Career Researcher, Faculty of IT, Monash University.
+- Best Paper Award, IEEE DSC, 2019.
+- Best Paper Award, IEEE MSN 2015.
+
+---
+
 ### Invited Talk
 
 - "SGX-enabled Network Middleboxes at Lightning Speed", Invited speaker at the [CSIRO Data61 Cyber Security Summer School 2020](https://research.csiro.au/csss/), Mar 2020
-- "Hardening Database Padding for Searchable Encryption", Keynote speaker at the 13th International Conference on Network and System Security [NSS'19](http://nsclab.org/nss2019/keynote.html), Dec 2019
 - "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", at Imperial College London, Nov 2019
 
