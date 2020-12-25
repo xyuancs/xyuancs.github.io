@@ -110,7 +110,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Award
 
-- Dean's Award for Excellence in Research by an Early Career Researcher, Faculty of IT, Monash University.
+- Dean's Award for Excellence in Research by an Early Career Researcher, Faculty of IT, Monash University, 2020.
 - Best Paper Award, IEEE DSC, 2019.
 - Best Paper Award, IEEE MSN 2015.
 
@@ -118,7 +118,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Invited Talk
 
-- "SGX-enabled Network Middleboxes at Lightning Speed", Invited speaker at the [CSIRO Data61 Cyber Security Summer School 2020](https://research.csiro.au/csss/), Mar 2020
+- "SGX-enabled Network Middleboxes at Lightning Speed", Invited speaker at the CSIRO Data61 Cyber Security Summer School, Mar 2020
 - "Hardening Database Padding for Searchable Encryption", Keynote speaker at the 13th International Conference on Network and System Security NSS'19, Dec 2019
 - "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", at Imperial College London, Nov 2019
 
