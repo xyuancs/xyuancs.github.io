@@ -26,9 +26,9 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 ### Recent Publication 
 
-- Shangqi Lai, **Xingliang Yuan**, Joseph Liu, Xun Yi, Qi Li, Dongxi Liu, and Nepal Surya, "OblivSketch: Oblivious Network Measurement as a Cloud Service", In the _Network and Distributed System Security Symposium_ (**_NDSS'21_**), _virtually, 2021 (Acceptance ratio: 15%)_.
+- Shangqi Lai, **Xingliang Yuan**, Joseph Liu, Xun Yi, Qi Li, Dongxi Liu, and Surya Nepal, "OblivSketch: Oblivious Network Measurement as a Cloud Service", In the _Network and Distributed System Security Symposium_ (**_NDSS'21_**), _virtually, 2021 (Acceptance ratio: 15%)_.
 
-- Shi-Feng Sun, Ron Steinfeld, Shangqi Lai, **Xingliang Yuan**, Amin Sakzad, Joseph Liu, and Dawu Gu, "Practical Non-Interactive Searchable Encryption with Forward and Backward Privacy", In the _Network and Distributed System Security Symposium_ (**_NDSS'21_**), _virtually, 2021 (Acceptance ratio: 15%)_.
+- Shi-Feng Sun, Ron Steinfeld, Shangqi Lai, **Xingliang Yuan**, Amin Sakzad, Joseph Liu, Surya Nepal, and Dawu Gu, "Practical Non-Interactive Searchable Encryption with Forward and Backward Privacy", In the _Network and Distributed System Security Symposium_ (**_NDSS'21_**), _virtually, 2021 (Acceptance ratio: 15%)_.
 
 - Viet Vo, Shangqi Lai, **Xingliang Yuan**, Joseph Liu, and Surya Nepal, "Towards Efficient and Strong Backward Private Searchable Encryption with Secure Enclaves", In the _19th International Conference on Applied Cryptography and Network Security_ (**_ACNS'21_**), _Kamakura, Japan, 2021 (First round acceptance ratio: 13/77= 16.8%)_.
 
@@ -74,6 +74,7 @@ I am always looking for outstanding students; please email me your CV and suppor
   - [BIMSec 2019](https://www.monash.edu/bimsec) (Co-Chair)
   - [ACISP 2020](http://nsclab.org/acisp2020/) (Online Conference Chair)
   - [ACM AsiaCCS-SCC 2021](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html) (Publicity Chair)
+  - [Qshine 2021](https://qshine.eai-conferences.org/2021/) (Program Co-Chair)
 - TPC member: 
   - [ACM AsiaCCS-SCC 2017](https://conference.cs.cityu.edu.hk/asiaccsscc/index.html)
   - IEEE Globecom 2017-2020
@@ -112,7 +113,7 @@ I am always looking for outstanding students; please email me your CV and suppor
 
 - Dean's Award for Excellence in Research by an Early Career Researcher, Faculty of IT, Monash University, 2020.
 - Best Paper Award, IEEE DSC, 2019.
-- Best Paper Award, IEEE MSN 2015.
+- Best Paper Award, IEEE MSN, 2015.
 
 ---
 
