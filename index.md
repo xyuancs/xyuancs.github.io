@@ -16,7 +16,7 @@ I am a Lecturer in the [Department of Software Systems and Cybersecurity](https
 I design protocols, systems (not legacy compatible) to address data privacy and security issues in cloud environments. Recently, I strive to bridge the gap in deploying searchable encryption into practice, and build prototypes based on hardware enclaves to securely process data streams. I am also interested in cybersecurity related inter-disciplinary research with machine learning, digital health, and building information modelling. 
 
 <br />
-My research is currently supported by Australian Research Council, CSIRO Data61, Oceania Cyber Security Centre, and Google Cloud Platform.
+My research is currently supported by Australian Research Council, CSIRO Data61, and Oceania Cyber Security Centre.
 
 <br />
 I am always looking for outstanding students; please email me your CV and supporting documents, including transcripts, research statement, english test scores. Details on PhD applications and scholarships can be found [here](http://www.monash.edu/graduate-research/future-students/apply), [here](https://data61.csiro.au/en/Our-Network/Students/Scholarship-Program), and [here](https://xyuancs.github.io/PhD-adv.md). 
@@ -25,6 +25,8 @@ I am always looking for outstanding students; please email me your CV and suppor
 ---
 
 ### Recent Publication 
+
+- Shangqi Lai, **Xingliang Yuan**, Shi-Feng Sun, Joseph Liu, Ron Steinfeld, Amin Sakzad, and Dongxi Liu, "Practical Encrypted Network Traffic Pattern Matching for Secure Middleboxes", **_IEEE Transactions on Dependable and Secure Computing_** (**_TDSC_**), Accepted, 2021
 
 - Shangqi Lai, **Xingliang Yuan**, Joseph Liu, Xun Yi, Qi Li, Dongxi Liu, and Surya Nepal, "OblivSketch: Oblivious Network Measurement as a Cloud Service", In the _Network and Distributed System Security Symposium_ (**_NDSS'21_**), _virtually, 2021 (Acceptance ratio: 15%)_.
 
