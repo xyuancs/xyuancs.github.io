@@ -1,93 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Xingliang Yuan @ Monash University</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Xingliang Yuan, Monash University">
-    <meta name="author" content="Xingliang Yuan">
-    <meta name="keywords" content="Xingliang Yuan, Monash University">
-    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/yeti/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-    body {
-        font-size: 16px;
-    }
-    </style>
-</head>
-
+<title>Xingliang Yuan @ Monash University</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Xingliang Yuan, Monash University">
+<meta name="author" content="Xingliang Yuan">
+<meta name="keywords" content="Xingliang Yuan, Monash University">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a href="https://scholar.google.com.hk/citations?user=81yWaCoAAAAJ" class="navbar-brand">Google Scholar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-brand" aria-controls="navbar-brand" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-brand">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="https://dblp.org/pid/21/8884.html" class="navbar-brand">DBLP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="http://github.com/MonashCybersecurityLab" class="navbar-brand">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <br />
-        <br />
-        <br />
-        <div class="row">
-            <div class="col-sm-3">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-cyan w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-white"> Home </a>
+    <a href="research.html" class="w3-bar-item w3-button w3-hover-white"> Research </a>  
+    <a href="people.html" class="w3-bar-item w3-button w3-hover-white"> People </a>  
+    <a href="teaching.html" class="w3-bar-item w3-button w3-hover-white"> Teaching </a> 
+    <a href="service.html" class="w3-bar-item w3-button w3-hover-white"> Services </a>
+    <a href="talk.html" class="w3-bar-item w3-button w3-hover-white"> Talks </a> 
+    <a href="award.html" class="w3-bar-item w3-button w3-hover-white"> Awards </a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-cyan w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-cyan w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="container"style="margin-top:50px">
+        <div class="w3-row-padding">
+            <div class="w3-third">
                 <br />
-                <img src="./xyuan.jpg" class="img-thumbnail float-right">
-        </div>
-                <div class="col-sm-7">
-                    <br />
-                    <h3><strong>Xingliang Yuan</strong></h3>
-                    <p>
-                        <strong>Senior Lecturer</strong> <br />
-                        <a href="https://www.monash.edu/it/ssc" target="_blank"> Department of Software Systems and Cybersecurity </a> <br />
-                        <a href="https://www.monash.edu" target="_blank"> Monash University</a> <br /><br />
-                    </p>
-                        Email: xingliang.yuan [at] monash.edu
-                    </p>
-                </div>
+                <h2><strong>Xingliang Yuan</strong></h2>
+                <p>
+                <strong>Senior Lecturer</strong> <br />
+                <a href="https://www.monash.edu/it/ssc" target="_blank"> Department of Software Systems and Cybersecurity </a> <br />
+                <a href="https://www.monash.edu" target="_blank"> Monash University</a> <br /><br />
+                </p>
+                    Email: xingliang.yuan [at] monash.edu
+                </p>
+            </div>
+            <div class="w3-third">
+                <br />
+                <img src="./xyuan.jpg" class="w3-center">
             </div>
         </div>
-        <div class="container">
-            <hr />
-            <h4><strong> About Me </strong> </h4>
+  </div>
+<!--   <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Xingliang Yuan</b></h1>
+    <h1 class="w3-xxxlarge w3-text-cyan"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid cyan" class="w3-round">
+  </div> -->
+  
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
+    <h1 class="w3-xlarge w3-text-cyan"><b>Biography</b></h1>
+    <hr style="width:50px;border:5px solid gray;" class="w3-round">
+    <p> I am currently a Senior Lecturer in the Department of Software Systems and Cybersecurity of the Faculty of Information Technology at Monash University. I am also a Deputy Course Director for <a href="https://www.monash.edu/study/courses/find-a-course/2022/cybersecurity-c6002" target="_blank">Master of Cybersecurity</a> at Monash. I joined Monash University in 2017 after I received my PhD degree in Computer Science from <a href="https://www.cityu.edu.hk" target="_blank">City University of Hong Kong</a>. I obtained my BS degree and MS degree both in Electrical Engineering from <a href="https://www.njupt.edu.cn/en/main.psp" target="_blank">Nanjing University of Posts and Telecommunications</a> and <a href="https://www.iit.edu" target="_blank">Illinois Institute of Technology</a>, respectively. Prior to that, I received my secondary education from <a href="http://www.nsfz.net" target="_blank">High School Affiliated To Nanjing Normal University</a>. From 2011 to 2013, I worked at <a href="https://www.stromasys.com" target="_blank">Stromasys S.A.</a>, developing and optimising the dynamic instruction translation engine for virtual SPARC and ALPHA servers on the x86 platform. 
+    </p>
+  </div>
+  
+
+  <div class="w3-container" id="services" style="margin-top:0px;max-width:1000px">
+    <h1 class="w3-xlarge w3-text-cyan"><b>Research Interests</b></h1>
+    <hr style="width:50px;border:5px solid gray;" class="w3-round">
             <p>
-                I am a Senior Lecturer in the Department of Software Systems and Cybersecurity of the Faculty of Information Technology at Monash University. I am also a Deputy Course Director for <a href="https://www.monash.edu/study/courses/find-a-course/2022/cybersecurity-c6002" target="_blank">Master of Cybersecurity</a> at Monash. I earned my PhD degree in Computer Science from <a href="https://www.cityu.edu.hk" target="_blank">City University of Hong Kong</a> in 2016. Before that, I worked at <a href="https://www.stromasys.com" target="_blank">Stromasys S.A.</a>, developing and optimising the dynamic instruction translation engine for virtual SPARC and ALPHA servers on the x86 platform. 
+                I have broad interests in cybersecurity, including data security and privacy, secure networked system, trustworthy machine Learning, and confidential computing. My recent research focus can be found <a href="research.html">here</a>. 
             </p>
-            <hr />
-            <p>
-                <font color="red"><strong>[Call for Participation]</strong></font> <font color="blue"><a href="https://sites.google.com/view/aisc2022/" target="_blank">Australasian Information Security Conference (AISC 2022).</a></font>
-            </p>
-        </div>
-        <div class="container">
-            <hr />
-            <h4><strong>Research Interests</strong></h4>
-            <p>
-                Data Security and Privacy, Secure Networked System, Machine Learning Security and Privacy, Decentralised System and Application, Confidential Computing. 
-            </p>
-        </div>
-        <div class="container">
-            <hr />
-            <h4><strong>Prospective Students</strong></h4>
+  </div>
+  <div class="w3-container" id="services" style="margin-top:0px;max-width:1000px">
+    <h1 class="w3-xlarge w3-text-cyan"><b>Prospective Students</b></h1>
+    <hr style="width:50px;border:5px solid gray;" class="w3-round">
             <p>
                 I am always looking for self-motivated students. Please email me your CV, transcript, research statement, english test score. Information on Monash PhD admission and scholarships can be found <a href="https://www.monash.edu/graduate-research/future-students/apply" target="_blank">here</a>, <a href="https://data61.csiro.au/en/Our-Network/Students/Scholarship-Program" target="_blank">here</a>, and <a href="https://supervisorconnect.it.monash.edu/supervisors/xingliang-yuan" target="_blank">here</a>. </font>
             </p>
         </div>
-        <div class="container">
-            <hr />
-            <h4 id="publication"><strong> Recent Publication (Selected) </strong></h4>
+
+ <div class="w3-container" id="services" style="margin-top:0px;max-width:1000px">
+    <h1 class="w3-xlarge w3-text-cyan"><b>Recent Publications (Selected)</b></h1>
+    <hr style="width:50px;border:5px solid gray;" class="w3-round">
             <ul class="square">
-                <li>
+              <p> My full publication list can be found at <a href="https://dblp.org/pid/21/8884.html" target="_blank">DBLP</a> and <a href="https://scholar.google.com.hk/citations?user=81yWaCoAAAAJ" target="_blank">Google Scholar</a>.</p>
+              <li>
+                    <font color="#3477ff"><strong>[IEEE TIFS]</strong></font> Xiaoning Liu, Bang Wu,  <strong>Xingliang Yuan</strong>, and Xun Yi, “Leia: A Lightweight Cryptographic Neural Network Inference System at the Edge", <em>IEEE Transactions on Information Forensics and Security</em>, Accepted, 2021.
+                    <br /><br />
+                </li>
+              <li>
                     <font color="#3477ff"><strong>[IEEE INFOCOM'22]</strong></font> Yi Liu, Lei Xu, <strong>Xingliang Yuan</strong>, Cong Wang, and Bo Li, “The Right to be Forgotten in Federated Learning: An Efficient Realization with Rapid Retraining", in <em>the 41st International Conference on Computer Communications</em>, Accepted, 2022 (Acceptance ratio: 19.9%).
                     <br /><br />
                 </li>
@@ -99,8 +116,8 @@
                     <font color="#3477ff"><strong>[IEEE TKDE]</strong></font> Viet Vo, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Joseph Liu, Surya Nepal, and Cong Wang, “ShieldDB: An Encrypted Document Database with Padding Countermeasures", <em>IEEE Transactions on Knowledge and Data Engineering</em>, Accepted, 2021.
                     <br /><br />
                 </li>
-                <li>
-                    <font color="#3477ff"><strong>[ACM AsiaCCS'22]</strong></font> Bang Wu, Xiangwen Yang, Shirui Pan, and <strong>Xingliang Yuan</strong>, “Model Extraction Attacks on Graph Neural Networks: Taxonomy and Realisation”, In <em>the 17th ACM ASIA Conference on Computer and Communications Security </em>, Nagasaki, Japan, 2022 (First round acceptance ratio: 15%).
+                 <li>
+                    <font color="#3477ff"><strong>[ACM AsiaCCS'22]</strong></font> Bang Wu, Xiangwen Yang, Shirui Pan, and <strong>Xingliang Yuan</strong>, “Model Extraction Attacks on Graph Neural Networks: Taxonomy and Realisation”, In <em>the 17th ACM ASIA Conference on Computer and Communications Security </em>, 2022 (First round acceptance ratio: 15%).
                     <br /><br />
                 </li>
                 <li>
@@ -119,7 +136,7 @@
                     <font color="#3477ff"><strong>[AsiaCCS-SBC'21]</strong></font> Dabao Wang, Siwei Wu, Ziling Lin, Lei Wu, <strong>Xingliang Yuan</strong>, Yajin Zhou, Haoyu Wang, and Kui Ren, “Towards A First Step to Understand Flash Loan and Its Applications in DeFi Ecosystem”, In <em>the 9th International Workshop on Security in Blockchain and Cloud Computing</em>, virtually, 2021.
                     <br /><br />
                 </li>
-                <li>
+              <li>
                     <font color="#3477ff"><strong>[IEEE TDSC]</strong></font> Shangqi Lai, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Joseph Liu, Ron Steinfeld, Amin Sakzad, and Dongxi Liu, “Practical Encrypted Network Traffic Pattern Matching for Secure Middleboxes”, <em>IEEE Transactions on Dependable and Secure Computing</em>, In Press, 2021.
                     <br /><br />
                 </li>
@@ -135,12 +152,12 @@
                     <font color="#3477ff"><strong>[ACNS'21]</strong></font> Viet Vo, Shangqi Lai, <strong>Xingliang Yuan</strong>, Joseph Liu, and Surya Nepal, "Towards Efficient and Strong Backward Private Searchable Encryption with Secure Enclaves", in <em>the 19th International Conference on Applied Cryptography and Network Security</em>, Kamakura, Japan, 2021 (First round acceptance ratio: 13/77= 16.8%).
                     <br /><br />
                 </li>
-                <li>
+              <li>
                     <font color="#3477ff"><strong>[ACNS'20]</strong></font> Viet Vo, Shangqi Lai, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Surya Nepal, and Joseph K. Liu, "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", in <em>the 18th International Conference on Applied Cryptography and Network Security</em>, virtually, 2020 (Acceptance ratio: 21%).
                     <br /><br />
                 </li>
                 <li>
-                    <font color="#3477ff"><strong>[ACM CCS'19]</strong></font> Huayi Duan, Cong Wang, <strong>Xingliang Yuan</strong>, Yajin Zhou, Qian Wang, and Kui Ren, “LightBox: Full-stack Protected Stateful Middlebox at Lightning Speed”, in <em>the 26th ACM Conference on Computer and Communications Security</em>, London, UK, 2019 (Acceptance ratio: 149/933 = 16%).
+                    <font color="#3477ff"><strong>[ACM CCS'19]</strong></font> Huayi Duan, Cong Wang, <strong>Xingliang Yuan</strong>, Yajin Zhou, Qian Wang, and Kui Ren, “LightBox: Full-stack Protected Stateful Middlebox at Lightning Speed”, in <em>the 26th ACM Conference on Computer and Communications Security</em>, , London, UK, 2019 (Acceptance ratio: 149/933 = 16%).
                     <br /><br />
                 </li>
                 <li>
@@ -157,100 +174,28 @@
                 </li>
             </ul>
         </div>
-        <div class="container">
-            <hr />
-            <h4><strong> Supervision/Co-supervision </strong></h4>
-            <!--<h5><strong><I>PhD students</I></strong></h5>-->
-            <ul class="square">
-                <li>PhD students: Viet Vo (with Data61), Kassem Bagher, Bang Wu, He Zhang, Dabao Wang, Shuo Huang, Yi Liu (with CityU HK, withdrew Monash offer due to COVID-19)</li>
-                <li>Alumni: Shangqi Lai (PhD Student, now Research Fellow at Monash), Robin Liu (Research Assistant, now Software Engineer at Google)</li>
-                <li>Vistors: Lei Xu (now Associate Professor at NJUST)</li>
-            </ul>
-        </div>
-        <div class="container">
-            <hr />
-            <h4><strong> Professional Activities </strong></h4>
-            <h5><strong><I> Organising Committee </I></strong></h5>
-            <ul class="square">
-                <li> 2022: <a href="https://sites.google.com/view/aisc2022/" target="_blank">AISC</a> (General Chair)</li>
-                <li>2021: <a href="https://conference.cs.cityu.edu.hk/asiaccsscc/" target="_blank">ACM AsiaCCS-SBC</a> (Publicity Chair), <a href="https://qshine.eai-conferences.org/2021/" target="_blank">QSHINE</a> (Program Co-Chair), Adhocnet (Program Co-Chair), ACISP  (Online Conference Chair), IEEE Blockchain (Publication Co-Chair) </li>
-                <li>2020: ACISP (Online Conference Chair)</li>
-                <li>2019: IEEE IDSC (Experience and Practice Track Co-Chair), ProvSec (Publicity Co-Chair), BIMSec (Co-Chair)</li>
-                
-            </ul>
-            <h5><strong><I> Technical Program Committee Member </I></strong></h5>
-            <ul class="square">
-                <li>2022: ACM AsiaCCS, ICICS </li>
-                <li>2021: ACM AsiaCCS, IEEE/ACM CCGrid, IEEE MSN, ICICS, IEEE Cloud</li>
-                <li>2020: SecureComm, IEEE Trustcom, QSHINE, NSS</li>
-                <li>...</li>
-                
-            </ul>
-            <h5><strong><I> Journal Reviewer </I></strong></h5>
-            <ul class="square">
-                <li>IEEE Transactions on Dependable and Secure Computing (TDSC)</li>
-                <li>IEEE Transactions on Information Forensics and Security (TIFS)</li>
-                <li>IEEE/ACM Transactions on Networking (TON)</li>
-                <li>IEEE Transactions on Knowledge and Data Engineering (TKDE)</li>
-                <li>IEEE Transactions on Parallel and Distributed Systems (TPDS)</li>
-                <li>IEEE Transactions on Computers (TC)</li>
-                <li>IEEE Transactions on Mobile Computing (TMC)</li>
-                <li>Proceeding of the IEEE </li>
-                <li>ACM Computing Surveys (CSUR)</li>
-                <li>ACM Transactions on Storage (TOS) </li>
-                <li>...</li>
-            </ul>
-        </div>
-        <div class="container">
-            <hr />
-            <h4><strong> Teaching Commitments</strong></h4>
-            <ul class="square">
-                <li>FIT5124: Advanced Topics in Security (PG), S1 2021/2022, Lecturer</li>
-                <li>FIT3031: Network Security (UG), S2 2019/2020/2021/2022, Chief Examiner and Lecturer</li>
-                <li>FIT5037: Network Security (PG), S2 2020/2021/2022, Chief Examiner and Lecturer</li>
-                <li>FIT3173: Software Security (UG), S1 2018/2019/2020, Lecturer</li>
-            </ul>
-        </div>
-        <div class="container">
-            <hr />
-            <h4><strong> Selected Awards </strong></h4>
-            <ul class="square">
-                <li><strong>Best Paper Award for the European Symposium on Research in Computer Security (ESORICS)</strong>, 2021.</li>
-                <li><strong>Dean’s Award for Excellence in Research by an Early Career Researcher</strong>, Faculty of IT, Monash University, 2020.</li>
-                <li><strong>Best Paper Award for the IEEE Conference on Dependable and Secure Computing (IDSC)</strong>, 2019.</li>
-                <li><strong>Best Paper Award for the IEEE International Conference on Mobility, Sensing and Networking (MSN)</strong>, 2015.</li>
-                <li><strong>Outstanding Academic Performance Award</strong>, City University of Hong Kong, 2015-2016. </li>
-            </ul>
-        </div>
-         <div class="container">
-            <hr />
-            <h4><strong> Invited Talks</strong></h4>
-            <ul class="square">
-                <li>“Secure Network Measurement as a Cloud Service”, Plenary talk at the 26th IEEE Pacific Rim International Symposium on Dependable Computing (PRDC), Dec 2021 </li>
-                <li>“Privacy-Preserving Deep Packet Inspection over In-the-Cloud Middleboxes”, Invited speaker at the CSIRO Data61 Cyber Security Summer School, Nov 2021 </li>
-                <li>“Secure Network Measurement as a Cloud Service”, Keynote speaker at the 3rd Workshop on Cloud Security and Privacy (held in conjunction with ACNS'21), June 2021 </li>
-                <li>“Trusted Execution Environment and Its Application to Secure Networked Systems”, Invited speaker at Illinois Institute of Technology, April 2021 </li>
-                <li>“SGX-enabled Network Middleboxes at Lightning Speed”, Invited speaker at the CSIRO Data61 Cyber Security Summer School, Mar 2020 </li>
-                <li>“Hardening Database Padding for Searchable Encryption”, Keynote speaker at the 13th International Conference on Network and System Security (NSS), Dec 2019 </li>
-                <li>“Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution”, at Imperial College London, Nov 2019</li>
-            </ul>
-        </div>
-        <div class="container">
-            <hr />
-            <h4><strong> Useful Links </strong></h4>
-            <ul class="square">
-                <li><a href="http://www.mysmu.edu/phdis2008/qiang.yan.2008/Doc/Quality%20Research%20in%20Affordable%20Way.pdf" target="_blank">Quality Research in Affordable Way</a>, by Dr Qiang Yan</li>
-                <li><a href="http://jianying.space/conference-ranking.html" target="_blank">CIF-based Top Cyber Security Conferences Ranking</a>, by Prof Jianying Zhou</li>
-            </ul>
-        </div>
-        <div class="footer">
+  
+
+<!-- End page content -->
+</div>
+
+ <div class="footer">
             <center>
                 <p>Last Update: December, 2021</p>
             </center>
         </div>
-        <script src="./res/jquery-3.3.1.min.js"></script>
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
 
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+</script>
+
+</body>
 </html>
