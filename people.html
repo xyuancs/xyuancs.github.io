@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Xingliang Yuan @ Monash University</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-cyan w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b><br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-white"> Home </a>
+    <a href="research.html" class="w3-bar-item w3-button w3-hover-white"> Research </a>  
+    <a href="people.html" class="w3-bar-item w3-button w3-hover-white"> People </a>  
+    <a href="teaching.html" class="w3-bar-item w3-button w3-hover-white"> Teaching </a> 
+    <a href="service.html" class="w3-bar-item w3-button w3-hover-white"> Services </a>
+    <a href="talk.html" class="w3-bar-item w3-button w3-hover-white"> Talks </a> 
+    <a href="award.html" class="w3-bar-item w3-button w3-hover-white"> Awards </a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-cyan w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-cyan w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  
+
+  <div class="w3-container" id="services" style="margin-top:200px;max-width:1000px">
+    <h1 class="w3-xlarge w3-text-cyan"><b>PhD students</b></h1>
+    <hr style="width:50px;border:5px solid gray;" class="w3-round">
+            <ul class="square">
+                <li>Viet Vo (with Data61)</li>
+                <li>Kassem Bagher</li>
+                <li>Bang Wu</li>
+                <li>He Zhang</li>
+                <li>Dabao Wang</li>
+                <li>Shuo Huang</li>
+                <li>Yi Liu (with CityU HK, withdrew Monash offer due to COVID-19)</li>
+            </ul>
+        </div>
+
+  <div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
+    <h1 class="w3-xlarge w3-text-cyan"><b>Alumni </b></h1>
+    <hr style="width:50px;border:5px solid gray;" class="w3-round">
+            <ul class="square">
+                <li>Shangqi Lai (PhD Student, now Research Fellow at Monash)</li>
+                <li>Robin Liu (Research Assistant, now Software Engineer at Google)</li>
+            </ul>
+        </div>
+
+          <div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
+    <h1 class="w3-xlarge w3-text-cyan"><b>Vistors </b></h1>
+    <hr style="width:50px;border:5px solid gray;" class="w3-round">
+            <ul class="square">
+                <li>Vistors: Lei Xu (now Associate Professor at NJUST)</li>
+            </ul>
+        </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
