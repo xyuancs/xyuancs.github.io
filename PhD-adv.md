@@ -1,4 +1,4 @@
-#  Ph.D. student positions available, at the School of Computing and Information Systems, The University of Melbourne, Australia
+#  Ph.D. Student Positions Available, at the School of Computing and Information Systems, the University of Melbourne, Australia
 
 Ph.D. student positions (stipend AU$ 38K per year, tax free, tuition wavier) are available starting Semester 1 2025.
 
