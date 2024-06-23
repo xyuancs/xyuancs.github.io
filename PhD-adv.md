@@ -27,10 +27,4 @@ The requirements includes:
 Please send me your CV, full transcripts, and a statement of interest (no more than 200 words) to xingliang.yuan@unimelb.edu.au.
 
 
-Xingliang Yuan
-Associate Professor in Computer Systems
-School of Computing and Information Systems
-University of Melbourne
-Level 5, Melbourne Connect
-Victoria, 3010, Australia
-(W) https://xyuancs.github.io/
+Xingliang Yuan, Associate Professor in Computer Systems, School of Computing and Information Systems, University of Melbourne, Level 5, Melbourne Connect, Victoria, 3010, Australia, (W) https://xyuancs.github.io/
