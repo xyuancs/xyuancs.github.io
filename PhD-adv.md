@@ -16,9 +16,9 @@ The requirements includes:
 
 - Must have completed a research project, component, subject, or group of subjects that accounts for at least 25% of one year’s work at Honours level, or 25% of one year accumulated over the length of a masters course, and which has, or have, been conducted, and assessed, individually. The grade of those research components must achieve an H1 (80–100%) grade.
 
-- Solid background in data structures, algorithms, databases, computer networks (tick one/multiple areas depending on your area).
+- Solid background in data structures, algorithms, databases, computer networks (tick one/multiple areas depending on your expertise).
 
-- Knowledgeable in applied cryptography, network security, deep learning (tick one/multiple areas depending on your area).
+- Knowledgeable in applied cryptography, network security, deep learning (tick one/multiple areas depending on your expertise).
 
 - Meet the University's English language requirements: https://study.unimelb.edu.au/how-to-apply/english-language-requirements/graduate-english-language-requirements/course-specific-requirements#navigation-feit.
 
