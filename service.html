@@ -1,51 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Xingliang Yuan @ The University of Melbourne</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xingliang Yuan, Associate Professor, ARC Future Fellow, The University of Melbourne">
+    <meta name="author" content="Xingliang Yuan">
+    <title>Services - Xingliang Yuan @ The University of Melbourne</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
+    
+    <style>
+
+        /* Modern Light Academic Theme */
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #f1f3f5;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a5568;
+            --text-tertiary: #718096;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --accent-light: #3b82f6;
+            --border: #e2e8f0;
+            --border-light: #f1f5f9;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+            --gradient-accent: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            --success: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--accent);
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 3rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-text .title {
+            font-size: 1.25rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-text .affiliation {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .hero-text .affiliation a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .hero-text .affiliation a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .hero-text .email {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            border: 4px solid var(--bg-primary);
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+        }
+
+        .section-content {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 900px;
+        }
+
+        .section-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .section-content a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1.5px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .section-content a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        /* News Section */
+        .news-list {
+            list-style: none;
+        }
+
+        .news-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            gap: 1rem;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            color: var(--success);
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .news-text {
+            color: var(--text-secondary);
+            flex: 1;
+        }
+
+        .news-text a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .news-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Publications */
+        .pub-section {
+            margin-bottom: 3rem;
+        }
+
+        .pub-section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 2rem 0 1.5rem;
+            padding-left: 1rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .pub-list {
+            list-style: none;
+        }
+
+        .pub-item {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .pub-item:last-child {
+            border-bottom: none;
+        }
+
+        .pub-venue {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-title {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .pub-authors {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-authors strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .pub-details {
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .pub-link {
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .section {
+                padding: 2rem 0;
+            }
+
+            .news-item {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection */
+        ::selection {
+            background-color: rgba(37, 99, 235, 0.2);
+            color: var(--text-primary);
+        }
+    
+    </style>
+</head>
+
 <body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Xingliang Yuan</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="service.html" class="active">Services</a></li>
+                <li><a href="talk.html">Talks</a></li>
+                <li><a href="award.html">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-light-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b><br></b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="index.html" class="w3-bar-item w3-button w3-hover-white"> Home </a>
-    <a href="research.html" class="w3-bar-item w3-button w3-hover-white"> Research </a>  
-    <a href="people.html" class="w3-bar-item w3-button w3-hover-white"> People </a>  
-    <a href="teaching.html" class="w3-bar-item w3-button w3-hover-white"> Teaching </a> 
-    <a href="service.html" class="w3-bar-item w3-button w3-hover-white"> Services </a>
-    <a href="talk.html" class="w3-bar-item w3-button w3-hover-white"> Talks </a> 
-    <a href="award.html" class="w3-bar-item w3-button w3-hover-white"> Grants and Awards </a> 
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-cyan w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-cyan w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span></span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
+<section class="section"><div class="section-content">
   
 
   <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:200px;max-width:1000px">
-    <h1 class="w3-xlarge w3-text-cyan"><b>Organising Committee</b></h1>
-    <hr style="width:50px;border:5px solid gray;" class="w3-round">
+  <section class="section"><div class="section-content">
+    <h2 class="section-title">Organising Committee</h2>
+    
             <ul class="square">
                 <li>2025: <a href="https://raid2025.github.io" target="_blank">RAID</a> (General co-chair), IWQoS'25 (Registration and Finance Chair)
                 </li>   
@@ -62,9 +439,9 @@ body {font-size:16px;}
         </div>
 
 
-<div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
-    <h1 class="w3-xlarge w3-text-cyan"><b>Technical Program Committee Member</b></h1>
-    <hr style="width:50px;border:5px solid gray;" class="w3-round">
+<section class="section"><div class="section-content">
+    <h2 class="section-title">Technical Program Committee Member</h2>
+    
             <ul class="square">
                 <li>2026: USENIX Security, AsiaCCS, EuroS&P</li>
                 <li>2025: NDSS, IEEE S&P, USENIX Security, AsiaCCS, EuroS&P, ACM Web, ACISP, ACSAC</li>
@@ -77,9 +454,9 @@ body {font-size:16px;}
             </ul>
         </div>
 
-<div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
-    <h1 class="w3-xlarge w3-text-cyan"><b>Editorship </b></h1>
-    <hr style="width:50px;border:5px solid gray;" class="w3-round">
+<section class="section"><div class="section-content">
+    <h2 class="section-title">Editorship </h2>
+    
             <ul class="square">
                 <li>Serve as an Area Editor (Security, Privacy, and Trust) of IEEE Transactions on Service Computing (TSC), July. 2025</li>
                 <li>Join the Editorial Board as Associate Editor of IEEE Transactions on Service Computing (TSC), Mar. 2024</li>
@@ -89,9 +466,9 @@ body {font-size:16px;}
         </div>
 
 
-<div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
-    <h1 class="w3-xlarge w3-text-cyan"><b>Journal Reviewer </b></h1>
-    <hr style="width:50px;border:5px solid gray;" class="w3-round">
+<section class="section"><div class="section-content">
+    <h2 class="section-title">Journal Reviewer </h2>
+    
             <ul class="square">
                 <li>IEEE Transactions on Dependable and Secure Computing (TDSC)</li>
                 <li>IEEE Transactions on Information Forensics and Security (TIFS)</li>
@@ -109,16 +486,18 @@ body {font-size:16px;}
         </div>
 
   
-<div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
-    <h1 class="w3-xlarge w3-text-cyan"><b>Faculty Service </b></h1>
-    <hr style="width:50px;border:5px solid gray;" class="w3-round">
-    At UniMelb:
+<section class="section"><div class="section-content">
+    <h2 class="section-title">Faculty Service </h2>
+    
+
             <ul class="square">
+                    <b>@UniMelb:</b>
                 <li>Course Coordinator (Program Director) for Master of Cybersecurity Online, July 2025 - now</li>
 
             </ul>
-    At Monash:
+
             <ul class="square">
+                    <b>@Monash:</b>
                 <li>Course Director for Master of Cybersecurity, June 2022 - June 2024</li>
                 <li>Faculty Level-C Promotion Committee Member, 2023 - June 2024</li>
                 <li>Academic Representative at Faculty EDI Committee, June 2022 - Jan 2023</li>
@@ -130,16 +509,21 @@ body {font-size:16px;}
             </ul>
         </div>
 <!-- End page content -->
-</div>
+</div></section>
+    </div>
 
+<footer class="footer">
+        <div class="container">
+            <p>Last Update: Nov, 2025</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">©Xingliang Yuan</p>
+        </div>
+    </footer>
 <script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-</script>
-
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+            const menu = document.querySelector('.nav-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
 </body>
 </html>

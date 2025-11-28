@@ -1,183 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Xingliang Yuan @ University of Melbourne </title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xingliang Yuan, Associate Professor, ARC Future Fellow, The University of Melbourne">
+    <meta name="author" content="Xingliang Yuan">
+    <title>Research - Xingliang Yuan @ The University of Melbourne</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
+    
+    <style>
+
+        /* Modern Light Academic Theme */
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #f1f3f5;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a5568;
+            --text-tertiary: #718096;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --accent-light: #3b82f6;
+            --border: #e2e8f0;
+            --border-light: #f1f5f9;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+            --gradient-accent: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            --success: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--accent);
+        }
+
+        .nav-menu a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 3rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-text .title {
+            font-size: 1.25rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-text .affiliation {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .hero-text .affiliation a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .hero-text .affiliation a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .hero-text .email {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            border: 4px solid var(--bg-primary);
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+        }
+
+        .section-content {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 900px;
+        }
+
+        .section-content p {
+            margin-bottom: 1.25rem;
+        }
+
+        .section-content a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1.5px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .section-content a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        /* News Section */
+        .news-list {
+            list-style: none;
+        }
+
+        .news-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            gap: 1rem;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            color: var(--success);
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .news-text {
+            color: var(--text-secondary);
+            flex: 1;
+        }
+
+        .news-text a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .news-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Publications */
+        .pub-section {
+            margin-bottom: 3rem;
+        }
+
+        .pub-section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 2rem 0 1.5rem;
+            padding-left: 1rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .pub-list {
+            list-style: none;
+        }
+
+        .pub-item {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .pub-item:last-child {
+            border-bottom: none;
+        }
+
+        .pub-venue {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-title {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .pub-authors {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-authors strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .pub-details {
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .pub-link {
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .section {
+                padding: 2rem 0;
+            }
+
+            .news-item {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection */
+        ::selection {
+            background-color: rgba(37, 99, 235, 0.2);
+            color: var(--text-primary);
+        }
+    
+    </style>
+</head>
+
 <body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Xingliang Yuan</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="talk.html">Talks</a></li>
+                <li><a href="award.html">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-light-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b><br></b></h3>
-  </div>
-  <div class="w3-bar-block">
-   <a href="index.html" class="w3-bar-item w3-button w3-hover-white"> Home </a>
-    <a href="research.html" class="w3-bar-item w3-button w3-hover-white"> Research </a>  
-    <a href="people.html" class="w3-bar-item w3-button w3-hover-white"> People </a>  
-    <a href="teaching.html" class="w3-bar-item w3-button w3-hover-white"> Teaching </a> 
-    <a href="service.html" class="w3-bar-item w3-button w3-hover-white"> Services </a>
-    <a href="talk.html" class="w3-bar-item w3-button w3-hover-white"> Talks </a> 
-    <a href="award.html" class="w3-bar-item w3-button w3-hover-white"> Grants and Awards </a> 
-  </div>
-</nav>
+    <div class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
+            <section class="section">
+                <h2 class="section-title">Research Areas</h2>
+            </section>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-cyan w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-cyan w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span></span>
-</header>
+            <section class="section">
+                <h2 class="section-title">Secure Network Functions as a Service (2016 - Present)</h2>
+                <div class="section-content">
+                    <p>Modern enterprise networks heavily rely on network functions for advanced traffic processing such as deep packet inspection, traffic classification, and load balancing. Recent advances in Network Function Virtualisation (NFV) have pushed forward the paradigm of migrating in-house network functions to third-party cloud providers as software-based services for reduced cost and increased scalability. Despite its benefits, such a new service model also raises security and privacy concerns, as traffic is now redirected and processed in an untrusted environment. My research in this area focuses on two directions: 1) enabling ubiquitous network functions over encrypted network traffic via practical cryptographic protocols <a href="#">[IEEE INFOCOM'16], [IEEE TDSC'21]</a> or confidential computing <a href="#">[ACM CCS'19], [NDSS'21]</a>, 2) providing assurance for network function execution <a href="#">[IEEE ICNP'16], [ACM/IEEE ToN'18]</a>.</p>
+                    
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TDSC'21]</div>
+                            <div class="pub-title">Practical Encrypted Network Traffic Pattern Matching for Secure Middleboxes</div>
+                            <div class="pub-authors">Shangqi Lai, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Joseph Liu, Ron Steinfeld, Amin Sakzad, and Dongxi Liu</div>
+                            <div class="pub-details">IEEE Transactions on Dependable and Secure Computing, In Press, 2021.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ISOC NDSS'21]</div>
+                            <div class="pub-title">OblivSketch: Oblivious Network Measurement as a Cloud Service</div>
+                            <div class="pub-authors">Shangqi Lai, <strong>Xingliang Yuan</strong>, Joseph Liu, Xun Yi, Qi Li, Dongxi Liu, and Surya Nepal</div>
+                            <div class="pub-details">In the Network and Distributed System Security Symposium, 2021 (Acceptance ratio: 15%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACM CCS'19]</div>
+                            <div class="pub-title">LightBox: Full-stack Protected Stateful Middlebox at Lightning Speed</div>
+                            <div class="pub-authors">Huayi Duan, Cong Wang, <strong>Xingliang Yuan</strong>, Yajin Zhou, Qian Wang, and Kui Ren</div>
+                            <div class="pub-details">In the 26th ACM Conference on Computer and Communications Security, 2019 (Acceptance ratio: 16%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACM/IEEE ToN'18]</div>
+                            <div class="pub-title">Assuring String Pattern Matching in Outsourced Middleboxes</div>
+                            <div class="pub-authors"><strong>Xingliang Yuan</strong>, Huayi Duan, and Cong Wang</div>
+                            <div class="pub-details">IEEE/ACM Transactions on Networking (ToN), In Press, 2018.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE Network'18]</div>
+                            <div class="pub-title">Towards Secure Outsourced Middlebox Services: Practices, Challenges, and Beyond</div>
+                            <div class="pub-authors">Cong Wang, <strong>Xingliang Yuan</strong>, Cui Yong, and Kui Ren</div>
+                            <div class="pub-details">IEEE Network Magazine (IEEE Network), vol. 32, no. 1, page 166-171, 2018.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE ICNP'16]</div>
+                            <div class="pub-title">Bringing Execution Assurances of Pattern Matching in Outsourced Middleboxes</div>
+                            <div class="pub-authors"><strong>Xingliang Yuan</strong>, Huayi Duan, and Cong Wang</div>
+                            <div class="pub-details">In the 24th IEEE International Conference on Network Protocols, 2016 (Acceptance ratio: 20%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE INFOCOM'16]</div>
+                            <div class="pub-title">Privacy-preserving Deep Packet Inspection in Outsourced Middleboxes</div>
+                            <div class="pub-authors"><strong>Xingliang Yuan</strong>, Xinyu Wang, Jianxiong Lin, and Cong Wang</div>
+                            <div class="pub-details">In the 35th International Conference on Computer Communications, 2016 (Acceptance ratio: 19%).</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+            <section class="section">
+                <h2 class="section-title">Trustworthy Machine Learning (2019 - Present)</h2>
+                <div class="section-content">
+                    <p>Due to increasing popularity and rapid advancement of deep learning, public cloud service providers are promoting Machine Learning as a Service (MLaaS), e.g., AWS SageMaker. In the meantime, security and privacy issues of machine learning models, algorithms, and services are not fully understood and addressed in academia and industry. My research in this area focuses on three directions: 1) designing lightweight privacy-preserving machine learning systems <a href="#">[ESORICS'21], [IEEE TIFS'21], [IEEE TDSC'22-a], [IOS JCS]</a>, 2) investigating adversarial attacks and defenses on emerging ML paradigm like Graph Neural Networks (GNN) <a href="#">[ACM AsiaCCS'21], [IEEE ICDM'21], [ACM CIKM'21]</a>, transfer learning <a href="#">[IEEE TDSC'22-b]</a>, and 3) devising secure and efficient federated learning algorithms <a href="#">[IEEE INFOCOM'22], [IEEE TDSC'22-c]</a>.</p>
+                    
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <div class="pub-venue">[IOS JCS]</div>
+                            <div class="pub-title">Deep Learning-Based Medical Diagnostic Services: A Secure, Lightweight, and Accurate Realization</div>
+                            <div class="pub-authors">Xiaoning Liu, Yifeng Zheng, <strong>Xingliang Yuan</strong>, and Xun Yi</div>
+                            <div class="pub-details">Journal of Computer Security (JCS), Accepted, 2022.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TDSC'22-c]</div>
+                            <div class="pub-title">Aggregation Service for Federated Learning: An Efficient, Secure, and More Resilient Realization</div>
+                            <div class="pub-authors">Yifeng Zheng, Shangqi Lai, Yi Liu, <strong>Xingliang Yuan</strong>, Xun Yi, and Cong Wang</div>
+                            <div class="pub-details">IEEE Transactions on Dependable and Secure Computing, Accepted, 2022.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TDSC'22-b]</div>
+                            <div class="pub-title">Defeating Misclassification Attacks Against Transfer Learning</div>
+                            <div class="pub-authors">Bang Wu, Shuo Wang, <strong>Xingliang Yuan</strong>, Cong Wang, Carsten Rudolph, Xiangwen Yang</div>
+                            <div class="pub-details">IEEE Transactions on Dependable and Secure Computing, Accepted, 2022.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TDSC'22-a]</div>
+                            <div class="pub-title">Securely Outsourcing Neural Network Inference to the Cloud with Lightweight Techniques</div>
+                            <div class="pub-authors">Xiaoning Liu, Yifeng Zheng, <strong>Xingliang Yuan</strong>, and Xun Yi</div>
+                            <div class="pub-details">IEEE Transactions on Dependable and Secure Computing, Accepted, 2022.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TIFS'21]</div>
+                            <div class="pub-title">Leia: A Lightweight Cryptographic Neural Network Inference System at the Edge</div>
+                            <div class="pub-authors">Xiaoning Liu, Bang Wu, <strong>Xingliang Yuan</strong>, and Xun Yi</div>
+                            <div class="pub-details">IEEE Transactions on Information Forensics and Security, Accepted, 2021.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE INFOCOM'22]</div>
+                            <div class="pub-title">The Right to be Forgotten in Federated Learning: An Efficient Realization with Rapid Retraining</div>
+                            <div class="pub-authors">Yi Liu, Lei Xu, <strong>Xingliang Yuan</strong>, Cong Wang, and Bo Li</div>
+                            <div class="pub-details">In the 41st International Conference on Computer Communications, Accepted, 2022 (Acceptance ratio: 19.9%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACM AsiaCCS'22]</div>
+                            <div class="pub-title">Model Extraction Attacks on Graph Neural Networks: Taxonomy and Realisation</div>
+                            <div class="pub-authors">Bang Wu, Xiangwen Yang, Shirui Pan, and <strong>Xingliang Yuan</strong></div>
+                            <div class="pub-details">In the 17th ACM ASIA Conference on Computer and Communications Security, 2022 (First round acceptance ratio: 15%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE ICDM'21]</div>
+                            <div class="pub-title">Adapting Membership Inference Attacks to GNN for Graph Classification: Approaches and Implications</div>
+                            <div class="pub-authors">Bang Wu, Xiangwen Yang, Shirui Pan, and <strong>Xingliang Yuan</strong></div>
+                            <div class="pub-details">In the IEEE International Conference on Data Mining, 2021.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACM CIKM'21]</div>
+                            <div class="pub-title">Projective Ranking: A Transferable Evasion Attack Method on Graph Neural Networks</div>
+                            <div class="pub-authors">He Zhang, Bang Wu, Xiangwen Yang, Chuan Zhou, Shuo Wang, <strong>Xingliang Yuan</strong>, and Shirui Pan</div>
+                            <div class="pub-details">In the 30th ACM International Conference on Information and Knowledge Management, 2021.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ESORICS'21]</div>
+                            <div class="pub-title">MediSC: Towards Secure and Lightweight Deep Learning as a Medical Diagnostic Service</div>
+                            <div class="pub-authors">Xiaoning Liu, Yifeng Zheng, <strong>Xingliang Yuan</strong>, and Xun Yi</div>
+                            <div class="pub-details">In the 26th European Symposium on Research in Computer Security, 2021 (<strong>Best Paper Award</strong>, Acceptance ratio: 21%).</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-  
+            <section class="section">
+                <h2 class="section-title">Encrypted and Queryable Databases (2014 - Present)</h2>
+                <div class="section-content">
+                    <p>Encrypted databases are designed to fight against massive data breaches. They preserve database query functionalities over encrypted data directly without decryption. My research in this area focuses on four aspects: 1) enabling rich queries for encrypted databases <a href="#">[ESORICS'15], [IEEE TMM'16], [IEEE TIFS'17], [ACM AsiaCCS'19]</a>, 2) developing encrypted NoSQL data stores <a href="#">[ACM AsiaCCS'16], [ACM AsiaCCS'17]</a>, 3) designing efficient encrypted search schemes with less leakage <a href="#">[ACM CCS'18], [ACNS'20], [ACNS'21], [NDSS'21]</a>, and 4) exploring hardening techniques for encrypted databases <a href="#">[IEEE INFOCOM'19], [IEEE TKDE'21], [IEEE TIFS'21]</a>.</p>
+                    
+                    <ul class="pub-list">
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TIFS'21]</div>
+                            <div class="pub-title">Interpreting and Mitigating Leakage-abuse Attacks in Searchable Symmetric Encryption</div>
+                            <div class="pub-authors">Lei Xu, Huayi Duan, Anxin Zhou, <strong>Xingliang Yuan</strong>, and Cong Wang</div>
+                            <div class="pub-details">IEEE Transactions on Information Forensics and Security, Accepted, 2021.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TKDE'21]</div>
+                            <div class="pub-title">ShieldDB: An Encrypted Document Database with Padding Countermeasures</div>
+                            <div class="pub-authors">Viet Vo, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Joseph Liu, Surya Nepal, and Cong Wang</div>
+                            <div class="pub-details">IEEE Transactions on Knowledge and Data Engineering, Accepted, 2021.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ISOC NDSS'21]</div>
+                            <div class="pub-title">Practical Non-Interactive Searchable Encryption with Forward and Backward Privacy</div>
+                            <div class="pub-authors">Shi-Feng Sun, Ron Steinfeld, Shangqi Lai, <strong>Xingliang Yuan</strong>, Amin Sakzad, Joseph Liu, Surya Nepal, and Dawu Gu</div>
+                            <div class="pub-details">In the Network and Distributed System Security Symposium, 2021 (Acceptance ratio: 15%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACNS'21]</div>
+                            <div class="pub-title">Towards Efficient and Strong Backward Private Searchable Encryption with Secure Enclaves</div>
+                            <div class="pub-authors">Viet Vo, Shangqi Lai, <strong>Xingliang Yuan</strong>, Joseph Liu, and Surya Nepal</div>
+                            <div class="pub-details">In the 19th International Conference on Applied Cryptography and Network Security, 2021 (First round acceptance ratio: 13/77= 16.8%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACNS'20]</div>
+                            <div class="pub-title">Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution</div>
+                            <div class="pub-authors">Viet Vo, Shangqi Lai, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Surya Nepal, and Joseph K. Liu</div>
+                            <div class="pub-details">In the 18th International Conference on Applied Cryptography and Network Security, 2020 (Acceptance ratio: 21%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACM AsiaCCS'19]</div>
+                            <div class="pub-title">GraphSE^2: An Encrypted Graph Database for Privacy-Preserving Social Search</div>
+                            <div class="pub-authors">Shangqi Lai, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Joseph K. Liu, Yuhong Liu, and Dongxi Liu</div>
+                            <div class="pub-details">In the 14th ACM Asia Conference on Computer and Communications Security, 2019 (Acceptance ratio: 17%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE INFOCOM'19]</div>
+                            <div class="pub-title">Hardening Database Padding for Searchable Encryption</div>
+                            <div class="pub-authors">Lei Xu, <strong>Xingliang Yuan</strong>, Cong Wang, Qian Wang, and Chungen Xu</div>
+                            <div class="pub-details">In the 38th International Conference on Computer Communications, 2019 (Acceptance ratio: 19.7%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACM CCS'18]</div>
+                            <div class="pub-title">Practical Backward-Secure Searchable Encryption from Symmetric Puncturable Encryption</div>
+                            <div class="pub-authors">Shi-Feng Sun, <strong>Xingliang Yuan</strong>, Joseph K. Liu, Ron Steinfeld, Amin Sakzad, Viet Vo, and Surya Nepal</div>
+                            <div class="pub-details">In the 25th ACM Conference on Computer and Communications Security, 2018 (Acceptance ratio: 134/809 = 16.6%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TIFS'17]</div>
+                            <div class="pub-title">Privacy-preserving Similarity Joins Over Encrypted Data</div>
+                            <div class="pub-authors"><strong>Xingliang Yuan</strong>, Xinyu Wang, Chenyun Yu, and Sarana Nutanong</div>
+                            <div class="pub-details">IEEE Transactions on Information Forensics and Security (TIFS), vol. 12, no. 11, page 2763-2775, 2017.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACM AsiaCCS'17]</div>
+                            <div class="pub-title">EncKV: An Encrypted Key-value Store with Rich Queries</div>
+                            <div class="pub-authors"><strong>Xingliang Yuan</strong>, Yu Guo, Xinyu Wang, Cong Wang, Baochun Li, and Xiaohua Jia</div>
+                            <div class="pub-details">In the 12th ACM Asia Conference on Computer and Communications Security, 2017 (Acceptance ratio: 18.6%) Extended Version in IEEE TPDS.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[IEEE TMM'16]</div>
+                            <div class="pub-title">Enabling Secure and Fast Indexing for Privacy-assured Healthcare Monitoring via Compressive Sensing</div>
+                            <div class="pub-authors"><strong>Xingliang Yuan</strong>, Xinyu Wang, Cong Wang, and Kui Ren</div>
+                            <div class="pub-details">IEEE Transactions on Multimedia (TMM), vol. 18, no. 10, page 2002-2014, 2016.</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ACM AsiaCCS'16]</div>
+                            <div class="pub-title">Building an Encrypted, Distributed, and Searchable Key-value Store</div>
+                            <div class="pub-authors"><strong>Xingliang Yuan</strong>, Xinyu Wang, Cong Wang, Chen Qian, and Jianxiong Lin</div>
+                            <div class="pub-details">In the 11th ACM Asia Conference on Computer and Communications Security, 2017 (Acceptance ratio: 20.9%).</div>
+                        </li>
+                        <li class="pub-item">
+                            <div class="pub-venue">[ESORICS'15]</div>
+                            <div class="pub-title">Enabling Privacy-assured Similarity Retrieval over Millions of Encrypted Records</div>
+                            <div class="pub-authors"><strong>Xingliang Yuan</strong>, Helei Cui, Xinyu Wang, and Cong Wang</div>
+                            <div class="pub-details">In the 20th European Symposium on Research in Computer Security, 2015 (Acceptance ratio: 19.8%).</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    </div>
 
-   <div class="w3-container" id="services" style="margin-top:200px;max-width:1000px">
-    <h1 class="w3-xlarge w3-text-cyan"><b>Secure Network Functions as a Service (2016 - Present)</b></h1>
-    <hr style="width:50px;border:5px solid gray;" class="w3-round">
-    <p> Modern enterprise networks heavily rely on network functions for advanced traffic processing such as deep packet inspection, traffic classification, and load balancing. Recent advances in Network Function Virtualisation (NFV) have pushed forward the paradigm of migrating in-house network functions to third-party cloud providers as software-based services for reduced cost and increased scalability. Despite its benefits, such a new service model also raises security and privacy concerns, as traffic is now redirected and processed in an untrusted environment. My research in this area focuses on two directions: 1) enabling ubiquitous network functions over encrypted network traffic via practical cryptographic protocols <font color="#3477ff">[IEEE INFOCOM'16], [IEEE TDSC'21]</font> or confidential computing <font color="#3477ff">[ACM CCS'19], [NDSS'21]</font>, 2) providing assurance for network function execution <font color="#3477ff">[IEEE ICNP'16], [ACM/IEEE ToN'18]</font>. 
-    </p>
-
-    <li>
-          <font color="#3477ff"><strong>[IEEE TDSC'21]</strong></font> Shangqi Lai, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Joseph Liu, Ron Steinfeld, Amin Sakzad, and Dongxi Liu, “Practical Encrypted Network Traffic Pattern Matching for Secure Middleboxes”, IEEE Transactions on Dependable and Secure Computing, In Press, 2021.
-                </li>
-    <li>
-          <font color="#3477ff"><strong>[ISOC NDSS'21]</strong></font> Shangqi Lai, <strong>Xingliang Yuan</strong>, Joseph Liu, Xun Yi, Qi Li, Dongxi Liu, and Surya Nepal, “OblivSketch: Oblivious Network Measurement as a Cloud Service”, In <em>the Network and Distributed System Security Symposium</em>, 2021 (Acceptance ratio: 15%).
-    </li>
-     <li>
-          <font color="#3477ff"><strong>[ACM CCS'19]</strong></font> Huayi Duan, Cong Wang, <strong>Xingliang Yuan</strong>, Yajin Zhou, Qian Wang, and Kui Ren, “LightBox: Full-stack Protected Stateful Middlebox at Lightning Speed”, in <em>the 26th ACM Conference on Computer and Communications Security</em>, 2019 (Acceptance ratio: 16%).
-      </li>
-          <li>
-            <font color="#3477ff"><strong>[ACM/IEEE ToN'18]</strong></font> <strong>Xingliang Yuan</strong>, Huayi Duan, and Cong Wang, “Assuring String Pattern Matching in Outsourced Middleboxes", IEEE/ACM Transactions on Networking (ToN), In Press, 2018.
-                </li>
-            <li>
-            <font color="#3477ff"><strong>[IEEE Network'18]</strong></font> Cong Wang, <strong>Xingliang Yuan</strong>, Cui Yong, and Kui Ren, “Towards Secure Outsourced Middlebox Services: Practices, Challenges, and Beyond", IEEE Network Magazine (IEEE Network), vol. 32, no. 1, page 166-171, 2018. 
-                </li>
-      <li>
-          <font color="#3477ff"><strong>[IEEE ICNP'16]</strong></font> <strong>Xingliang Yuan</strong>, Huayi Duan, and Cong Wang, “Bringing Execution Assurances of Pattern Matching in Outsourced Middleboxes", In <em>tin the 24th IEEE International Conference on Network Protocols</em>, 2016 (Acceptance ratio: 20%).
-    </li>
-                 <li>
-          <font color="#3477ff"><strong>[IEEE INFOCOM'16]</strong></font> <strong>Xingliang Yuan</strong>, Xinyu Wang, Jianxiong Lin, and Cong Wang, “Privacy-preserving Deep Packet Inspection in Outsourced Middleboxes”, in <em>the 35th International Conference on Computer Communications</em>, 2016 (Acceptance ratio: 19%).
-    </li>
-
-  </div>
-
-  <div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
-    <h1 class="w3-xlarge w3-text-cyan"><b>Trustworthy Machine Learning (2019 - Present)</b></h1>
-    <hr style="width:50px;border:5px solid gray;" class="w3-round">
-    <p> Due to increasing popularity and rapid advancement of deep learning, public cloud service providers are promoting Machine Learning as a Service (MLaaS), e.g., AWS SageMaker. In the meantime, security and privacy issues of machine learning models, algorithms, and services are not fully understood and addressed in academia and industry. My research in this area focuses on three directions: 1) designing lightweight privacy-preserving machine learning systems <font color="#3477ff">[ESORICS'21], [IEEE TIFS'21], [IEEE TDSC'22-a], [IOS JCS]</font>, 2) investigating adversarial attacks and defenses on emerging ML paradigm like Graph Neural Networks (GNN) <font color="#3477ff">[ACM AsiaCCS'21], [IEEE ICDM'21], [ACM CIKM'21]</font>, transfer learning <font color="#3477ff">[IEEE TDSC'22-b]</font>, and 3) devising secure and efficient federated learning algorithms <font color="#3477ff">[IEEE INFOCOM'22], [IEEE TDSC'22-c]</font>.
-    </p>
-                <li>
-                    <font color="#3477ff"><strong>[IOS JCS]</strong></font> Xiaoning Liu, Yifeng Zheng, <strong>Xingliang Yuan</strong>, and Xun Yi, “Deep Learning-Based Medical Diagnostic Services: A Secure, Lightweight, and Accurate Realization", <em>Journal of Computer Security (JCS)</em>, Accepted, 2022.
-                </li>
-                <li>
-                    <font color="#3477ff"><strong>[IEEE TDSC'22-c]</strong></font> Yifeng Zheng, Shangqi Lai, Yi Liu, <strong>Xingliang Yuan</strong>, Xun Yi, and Cong Wang, “Aggregation Service for Federated Learning: An Efficient, Secure, and More Resilient Realization", <em>IEEE Transactions on Dependable and Secure Computing</em>, Accepted, 2022.
-                </li>
-                  <li>
-                    <font color="#3477ff"><strong>[IEEE TDSC'22-b]</strong></font> Bang Wu, Shuo Wang, <strong>Xingliang Yuan</strong>, Cong Wang, Carsten Rudolph, Xiangwen Yang, “Defeating Misclassification Attacks Against Transfer Learning", <em>IEEE Transactions on Dependable and Secure Computing</em>, Accepted, 2022.
-                </li>
-     <li>
-                    <font color="#3477ff"><strong>[IEEE TDSC'22-a]</strong></font> Xiaoning Liu, Yifeng Zheng,  <strong>Xingliang Yuan</strong>, and Xun Yi, “Securely Outsourcing Neural Network Inference to the Cloud with Lightweight Techniques", <em>IEEE Transactions on Dependable and Secure Computing</em>, Accepted, 2022.
-                </li>
-    <li>
-                    <font color="#3477ff"><strong>[IEEE TIFS'21]</strong></font> Xiaoning Liu, Bang Wu,  <strong>Xingliang Yuan</strong>, and Xun Yi, “Leia: A Lightweight Cryptographic Neural Network Inference System at the Edge", <em>IEEE Transactions on Information Forensics and Security</em>, Accepted, 2021.
-                </li>
-                <li>
-                    <font color="#3477ff"><strong>[IEEE INFOCOM'22]</strong></font> Yi Liu, Lei Xu, <strong>Xingliang Yuan</strong>, Cong Wang, and Bo Li, “The Right to be Forgotten in Federated Learning: An Efficient Realization with Rapid Retraining", in <em>the 41st International Conference on Computer Communications</em>, Accepted, 2022 (Acceptance ratio: 19.9%).
-                </li>
-                <li>
-                    <font color="#3477ff"><strong>[ACM AsiaCCS'22]</strong></font> Bang Wu, Xiangwen Yang, Shirui Pan, and <strong>Xingliang Yuan</strong>, “Model Extraction Attacks on Graph Neural Networks: Taxonomy and Realisation”, In <em>the 17th ACM ASIA Conference on Computer and Communications Security </em>, 2022 (First round acceptance ratio: 15%).
-                </li>
-                <li>
-                    <font color="#3477ff"><strong>[IEEE ICDM'21]</strong></font> Bang Wu, Xiangwen Yang, Shirui Pan, and <strong>Xingliang Yuan</strong>, “Adapting Membership Inference Attacks to GNN for Graph Classification: Approaches and Implications”, In <em>the IEEE International Conference on Data Mining</em>, 2021.
-                </li>
-                <li>
-                    <font color="#3477ff"><strong>[ACM CIKM'21]</strong></font> He Zhang, Bang Wu, Xiangwen Yang, Chuan Zhou, Shuo Wang, <strong>Xingliang Yuan</strong>, and Shirui Pan, “Projective Ranking: A Transferable Evasion Attack Method on Graph Neural Networks”, In <em> the 30th ACM International Conference on Information and Knowledge Management</em>, 2021.
-                </li>
-                <li>
-                    <font color="#3477ff"><strong>[ESORICS'21]</strong></font> Xiaoning Liu, Yifeng Zheng, <strong>Xingliang Yuan</strong>, and Xun Yi, “MediSC: Towards Secure and Lightweight Deep Learning as a Medical Diagnostic Service”, In <em>the 26th European Symposium on Research in Computer Security</em>, 2021 (<strong>Best Paper Award</strong>, Acceptance ratio: 21%).
-                </li>
-  </div>
-
-  <div class="w3-container" id="services" style="margin-top:10px;max-width:1000px">
-    <h1 class="w3-xlarge w3-text-cyan"><b>Encrypted and Queryable Databases (2014 - Present)</b></h1>
-    <hr style="width:50px;border:5px solid gray;" class="w3-round">
-    <p>Encrypted databases are designed to fight against massive data breaches. They preserve database query functionalities over encrypted data directly without decryption. My research in this area focuses on four aspects: 1) enabling rich queries for encrypted databases <font color="#3477ff">[ESORICS'15], [IEEE TMM'16], [IEEE TIFS'17], [ACM AsiaCCS'19]</font>, 2) developing encrypted NoSQL data stores <font color="#3477ff">[ACM AsiaCCS'16], [ACM AsiaCCS'17]</font>, 3) designing efficient encrypted search schemes with less leakage<font color="#3477ff">[ACM CCS'18], [ACNS'20], [ACNS'21], [NDSS'21]</font>, and 4) exploring hardening techniques for encrypted databases <font color="#3477ff">[IEEE INFOCOM'19], [IEEE TKDE'21], [IEEE TIFS'21]</font>. 
-    </p>
-    <li>
-                    <font color="#3477ff"><strong>[IEEE TIFS'21]</strong></font> Lei Xu, Huayi Duan, Anxin Zhou, <strong>Xingliang Yuan</strong>, and Cong Wang, “Interpreting and Mitigating Leakage-abuse Attacks in Searchable Symmetric Encryption", <em>IEEE Transactions on Information Forensics and Security</em>, Accepted, 2021.
-                </li>
-
-    <li>
-                    <font color="#3477ff"><strong>[IEEE TKDE'21]</strong></font> Viet Vo, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Joseph Liu, Surya Nepal, and Cong Wang, “ShieldDB: An Encrypted Document Database with Padding Countermeasures", <em>IEEE Transactions on Knowledge and Data Engineering</em>, Accepted, 2021.
-                </li>
-
-    <li>
-                    <font color="#3477ff"><strong>[ISOC NDSS'21]</strong></font> Shi-Feng Sun, Ron Steinfeld, Shangqi Lai, <strong>Xingliang Yuan</strong>, Amin Sakzad, Joseph Liu, Surya Nepal, and Dawu Gu, “Practical Non-Interactive Searchable Encryption with Forward and Backward Privacy”, In <em>the Network and Distributed System Security Symposium</em>, 2021 (Acceptance ratio: 15%).
-                </li>
-
-    <li>
-                    <font color="#3477ff"><strong>[ACNS'21]</strong></font> Viet Vo, Shangqi Lai, <strong>Xingliang Yuan</strong>, Joseph Liu, and Surya Nepal, "Towards Efficient and Strong Backward Private Searchable Encryption with Secure Enclaves", in <em>the 19th International Conference on Applied Cryptography and Network Security</em>, 2021 (First round acceptance ratio: 13/77= 16.8%).
-                </li>
-              <li>
-                    <font color="#3477ff"><strong>[ACNS'20]</strong></font> Viet Vo, Shangqi Lai, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Surya Nepal, and Joseph K. Liu, "Accelerating Forward and Backward Private Searchable Encryption Using Trusted Execution", in <em>the 18th International Conference on Applied Cryptography and Network Security</em>, 2020  (Acceptance ratio: 21%). 
-                </li>
-
-    <li>
-          <font color="#3477ff"><strong>[ACM AsiaCCS'19]</strong></font> Shangqi Lai, <strong>Xingliang Yuan</strong>, Shi-Feng Sun, Joseph K. Liu, Yuhong Liu, and Dongxi Liu, “GraphSE^2: An Encrypted Graph Database for Privacy-Preserving Social Search”,  in <em>the 14th ACM Asia Conference on Computer and Communications Security </em>, 2019. (Acceptance ratio: 17%).
-    </li>
-
-     <li>
-                    <font color="#3477ff"><strong>[IEEE INFOCOM'19]</strong></font> Lei Xu, <strong>Xingliang Yuan</strong>, Cong Wang, Qian Wang, and Chungen Xu, “Hardening Database Padding for Searchable Encryption”, in <em>the 38th International Conference on Computer Communications</em>, 2019. (Acceptance ratio: 19.7%).
-                </li>
-
-    <li>
-          <font color="#3477ff"><strong>[ACM CCS'18]</strong></font> Shi-Feng Sun, <strong>Xingliang Yuan</strong>, Joseph K. Liu, Ron Steinfeld, Amin Sakzad, Viet Vo, and Surya Nepal, “Practical Backward-Secure Searchable Encryption from Symmetric Puncturable Encryption”,  in <em>the 25th ACM Conference on Computer and Communications Security </em>, 2018. (Acceptance ratio: 134/809 = 16.6%)
-    </li>
-
-       <li>
-          <font color="#3477ff"><strong>[IEEE TIFS'17]</strong></font> <strong>Xingliang Yuan</strong>, Xinyu Wang, Chenyun Yu, and Sarana Nutanong, “Privacy-preserving Similarity Joins Over Encrypted Data”, IEEE Transactions on Information Forensics and Security (TIFS), vol. 12, no. 11, page 2763-2775, 2017. 
-    </li>
-
-    <li>
-          <font color="#3477ff"><strong>[ACM AsiaCCS'17]</strong></font> <strong>Xingliang Yuan</strong>, Yu Guo, Xinyu Wang, Cong Wang, Baochun Li, and Xiaohua Jia, “EncKV: An Encrypted Key-value Store with Rich Queries”,  in <em>the 12th ACM Asia Conference on Computer and Communications Security </em>, 2017. (Acceptance ratio: 18.6%) Extended Version in IEEE TPDS.
-    </li>
-
-   <li>
-          <font color="#3477ff"><strong>[IEEE TMM'16]</strong></font> <strong>Xingliang Yuan</strong>, Xinyu Wang, Cong Wang, and Kui Ren, “Enabling Secure and Fast Indexing for Privacy-assured Healthcare Monitoring via Compressive Sensing”, IEEE Transactions on Multimedia (TMM), vol. 18, no. 10, page 2002-2014, 2016. 
-    </li>
-
-         <li>
-          <font color="#3477ff"><strong>[ACM AsiaCCS'16]</strong></font> <strong>Xingliang Yuan</strong>, Xinyu Wang, Cong Wang, Chen Qian, and Jianxiong Lin, “Building an Encrypted, Distributed, and Searchable Key-value Store”,  in <em>the 11th ACM Asia Conference on Computer and Communications Security </em>, 2017. (Acceptance ratio: 20.9%)
-    </li>
-    <li>
-          <font color="#3477ff"><strong>[ESORICS'15]</strong></font> <strong>Xingliang Yuan</strong>, Helei Cui, Xinyu Wang, and Cong Wang, “Enabling Privacy-assured Similarity Retrieval over Millions of Encrypted Records”,  in <em>the 20th European Symposium on Research in Computer Security </em>, 2015. (Acceptance ratio: 19.8%)
-    </li>
-  </div>
-
-  
-
-<!-- End page content -->
-</div>
-
+<footer class="footer">
+        <div class="container">
+            <p>Last Update: Nov, 2025</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">©Xingliang Yuan</p>
+        </div>
+    </footer>
 <script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-</script>
-
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+            const menu = document.querySelector('.nav-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
 </body>
 </html>
