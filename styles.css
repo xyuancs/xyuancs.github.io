@@ -290,7 +290,8 @@ strong {
 .hero-summary,
 .hero-text .affiliation,
 .page-summary {
-    max-width: 38rem;
+    width: 100%;
+    max-width: none;
     color: rgba(255, 255, 255, 0.88);
 }
 
@@ -472,7 +473,8 @@ strong {
 }
 
 .section-content {
-    max-width: 78ch;
+    width: 100%;
+    max-width: none;
     color: var(--text-secondary);
 }
 
