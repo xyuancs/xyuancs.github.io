@@ -1,458 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xingliang Yuan, Associate Professor, ARC Future Fellow, The University of Melbourne">
-    <meta name="author" content="Xingliang Yuan">
-    <title>Research - Xingliang Yuan @ The University of Melbourne</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
-    
-    <style>
-
-        /* Modern Light Academic Theme */
-        :root {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8f9fa;
-            --bg-tertiary: #f1f3f5;
-            --bg-card: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #4a5568;
-            --text-tertiary: #718096;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --accent-light: #3b82f6;
-            --border: #e2e8f0;
-            --border-light: #f1f5f9;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
-            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-            --gradient-accent: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
-            --success: #10b981;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            font-size: 16px;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* Navigation */
-        .navbar {
-            background: var(--bg-card);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: var(--shadow-sm);
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            text-decoration: none;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-menu a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        .nav-menu a:hover,
-        .nav-menu a.active {
-            color: var(--accent);
-        }
-
-        .nav-menu a.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--gradient-accent);
-        }
-
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-primary);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 4rem 0 3rem;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .hero-text h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.75rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .hero-text .title {
-            font-size: 1.25rem;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero-text .affiliation {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .hero-text .affiliation a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .hero-text .affiliation a:hover {
-            color: var(--accent-hover);
-            text-decoration: underline;
-        }
-
-        .hero-text .email {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .hero-image {
-            text-align: center;
-        }
-
-        .hero-image img {
-            width: 100%;
-            max-width: 280px;
-            border-radius: 16px;
-            box-shadow: var(--shadow-lg);
-            border: 4px solid var(--bg-primary);
-        }
-
-        /* Content Sections */
-        .section {
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .section:last-child {
-            border-bottom: none;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 3px solid var(--accent);
-            display: inline-block;
-        }
-
-        .section-content {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            max-width: 900px;
-        }
-
-        .section-content p {
-            margin-bottom: 1.25rem;
-        }
-
-        .section-content a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1.5px solid transparent;
-            transition: border-color 0.2s ease;
-        }
-
-        .section-content a:hover {
-            border-bottom-color: var(--accent);
-        }
-
-        /* News Section */
-        .news-list {
-            list-style: none;
-        }
-
-        .news-item {
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--border-light);
-            display: flex;
-            gap: 1rem;
-        }
-
-        .news-item:last-child {
-            border-bottom: none;
-        }
-
-        .news-date {
-            color: var(--success);
-            font-weight: 600;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .news-text {
-            color: var(--text-secondary);
-            flex: 1;
-        }
-
-        .news-text a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .news-text a:hover {
-            text-decoration: underline;
-        }
-
-        /* Publications */
-        .pub-section {
-            margin-bottom: 3rem;
-        }
-
-        .pub-section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 2rem 0 1.5rem;
-            padding-left: 1rem;
-            border-left: 4px solid var(--accent);
-        }
-
-        .pub-list {
-            list-style: none;
-        }
-
-        .pub-item {
-            padding: 1.25rem 0;
-            border-bottom: 1px solid var(--border-light);
-        }
-
-        .pub-item:last-child {
-            border-bottom: none;
-        }
-
-        .pub-venue {
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-title {
-            color: var(--text-primary);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .pub-authors {
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-authors strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        .pub-details {
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            font-style: italic;
-        }
-
-        .pub-link {
-            margin-top: 0.5rem;
-            display: inline-block;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--bg-secondary);
-            padding: 2rem 0;
-            text-align: center;
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--bg-card);
-                flex-direction: column;
-                gap: 0;
-                padding: 1rem 0;
-                box-shadow: var(--shadow-lg);
-                border-bottom: 1px solid var(--border);
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .nav-menu li {
-                width: 100%;
-            }
-
-            .nav-menu a {
-                display: block;
-                padding: 0.75rem 2rem;
-                width: 100%;
-            }
-
-            .nav-menu a.active::after {
-                display: none;
-            }
-
-            .mobile-menu-toggle {
-                display: block;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .section {
-                padding: 2rem 0;
-            }
-
-            .news-item {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Selection */
-        ::selection {
-            background-color: rgba(37, 99, 235, 0.2);
-            color: var(--text-primary);
-        }
-    
-    </style>
-</head>
-
-<body>
-<nav class="navbar">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Research themes and representative outputs from Xingliang Yuan at the University of Melbourne.">
+            <meta name="author" content="Xingliang Yuan">
+            <meta name="theme-color" content="#0f2345">
+            <title>Research - Xingliang Yuan @ The University of Melbourne</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body class="page-research">
+            <a class="skip-link" href="#main">Skip to content</a>
+            <header class="site-header">
+    <div class="brand-bar">
+        <div class="container">
+            <div class="brand-unit">School of Computing and Information Systems</div>
+            <a class="brand-link" href="https://www.unimelb.edu.au" target="_blank" rel="noreferrer" aria-label="The University of Melbourne">
+                <img class="brand-logo" src="https://designsystem.web.unimelb.edu.au/static/img/logo.svg" alt="The University of Melbourne">
+            </a>
+        </div>
+    </div>
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Xingliang Yuan</a>
-            <button class="mobile-menu-toggle">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="research.html" class="active">Research</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="talk.html">Talks</a></li>
-                <li><a href="award.html">Awards</a></li>
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-name">Xingliang Yuan</span>
+            </a>
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-menu">
+                <li><a href="index.html">Home</a></li><li><a href="research.html" aria-current="page">Research</a></li><li><a href="people.html">People</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html">Service</a></li><li><a href="talk.html">Talks</a></li><li><a href="award.html">Awards</a></li>
             </ul>
         </div>
     </nav>
+</header>
 
-    <div class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
-            <section class="section">
+            <section class="page-header">
+    <div class="container">
+        <h1 class="page-title">Research</h1>
+    </div>
+</section>
+
+            <main id="main" class="page-main">
+                <div class="container">
+<section class="section">
                 <h2 class="section-title">Research Areas</h2>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h3>Secure networked systems</h3>
+                        <p>Middleboxes, encrypted traffic processing, confidential execution, and verification for outsourced network functions.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Trustworthy machine learning</h3>
+                        <p>Privacy-preserving inference and training, secure federated learning, graph learning, and post-deployment safeguards.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Encrypted data management</h3>
+                        <p>Queryable encrypted databases, searchable encryption, leakage resilience, and practical large-scale deployments.</p>
+                    </article>
+                </div>
             </section>
 
             <section class="section">
                 <h2 class="section-title">Secure Network Functions as a Service (2016 - Present)</h2>
                 <div class="section-content">
-                    <p>Modern enterprise networks heavily rely on network functions for advanced traffic processing such as deep packet inspection, traffic classification, and load balancing. Recent advances in Network Function Virtualisation (NFV) have pushed forward the paradigm of migrating in-house network functions to third-party cloud providers as software-based services for reduced cost and increased scalability. Despite its benefits, such a new service model also raises security and privacy concerns, as traffic is now redirected and processed in an untrusted environment. My research in this area focuses on two directions: 1) enabling ubiquitous network functions over encrypted network traffic via practical cryptographic protocols <a href="#">[IEEE INFOCOM'16], [IEEE TDSC'21]</a> or confidential computing <a href="#">[ACM CCS'19], [NDSS'21]</a>, 2) providing assurance for network function execution <a href="#">[IEEE ICNP'16], [ACM/IEEE ToN'18]</a>.</p>
-                    
+                    <p>Modern enterprise networks heavily rely on network functions for advanced traffic processing such as deep packet inspection, traffic classification, and load balancing. Recent advances in Network Function Virtualisation (NFV) have pushed forward the paradigm of migrating in-house network functions to third-party cloud providers as software-based services for reduced cost and increased scalability. Despite its benefits, such a new service model also raises security and privacy concerns, as traffic is now redirected and processed in an untrusted environment. My research in this area focuses on two directions: 1) enabling ubiquitous network functions over encrypted network traffic via practical cryptographic protocols [IEEE INFOCOM'16], [IEEE TDSC'21] or confidential computing [ACM CCS'19], [NDSS'21], 2) providing assurance for network function execution [IEEE ICNP'16], [ACM/IEEE ToN'18].</p>
+
                     <ul class="pub-list">
                         <li class="pub-item">
                             <div class="pub-venue">[IEEE TDSC'21]</div>
@@ -503,8 +121,8 @@
             <section class="section">
                 <h2 class="section-title">Trustworthy Machine Learning (2019 - Present)</h2>
                 <div class="section-content">
-                    <p>Due to increasing popularity and rapid advancement of deep learning, public cloud service providers are promoting Machine Learning as a Service (MLaaS), e.g., AWS SageMaker. In the meantime, security and privacy issues of machine learning models, algorithms, and services are not fully understood and addressed in academia and industry. My research in this area focuses on three directions: 1) designing lightweight privacy-preserving machine learning systems <a href="#">[ESORICS'21], [IEEE TIFS'21], [IEEE TDSC'22-a], [IOS JCS]</a>, 2) investigating adversarial attacks and defenses on emerging ML paradigm like Graph Neural Networks (GNN) <a href="#">[ACM AsiaCCS'21], [IEEE ICDM'21], [ACM CIKM'21]</a>, transfer learning <a href="#">[IEEE TDSC'22-b]</a>, and 3) devising secure and efficient federated learning algorithms <a href="#">[IEEE INFOCOM'22], [IEEE TDSC'22-c]</a>.</p>
-                    
+                    <p>Due to increasing popularity and rapid advancement of deep learning, public cloud service providers are promoting Machine Learning as a Service (MLaaS), e.g., AWS SageMaker. In the meantime, security and privacy issues of machine learning models, algorithms, and services are not fully understood and addressed in academia and industry. My research in this area focuses on three directions: 1) designing lightweight privacy-preserving machine learning systems [ESORICS'21], [IEEE TIFS'21], [IEEE TDSC'22-a], [IOS JCS], 2) investigating adversarial attacks and defenses on emerging ML paradigm like Graph Neural Networks (GNN) [ACM AsiaCCS'21], [IEEE ICDM'21], [ACM CIKM'21], transfer learning [IEEE TDSC'22-b], and 3) devising secure and efficient federated learning algorithms [IEEE INFOCOM'22], [IEEE TDSC'22-c].</p>
+
                     <ul class="pub-list">
                         <li class="pub-item">
                             <div class="pub-venue">[IOS JCS]</div>
@@ -573,8 +191,8 @@
             <section class="section">
                 <h2 class="section-title">Encrypted and Queryable Databases (2014 - Present)</h2>
                 <div class="section-content">
-                    <p>Encrypted databases are designed to fight against massive data breaches. They preserve database query functionalities over encrypted data directly without decryption. My research in this area focuses on four aspects: 1) enabling rich queries for encrypted databases <a href="#">[ESORICS'15], [IEEE TMM'16], [IEEE TIFS'17], [ACM AsiaCCS'19]</a>, 2) developing encrypted NoSQL data stores <a href="#">[ACM AsiaCCS'16], [ACM AsiaCCS'17]</a>, 3) designing efficient encrypted search schemes with less leakage <a href="#">[ACM CCS'18], [ACNS'20], [ACNS'21], [NDSS'21]</a>, and 4) exploring hardening techniques for encrypted databases <a href="#">[IEEE INFOCOM'19], [IEEE TKDE'21], [IEEE TIFS'21]</a>.</p>
-                    
+                    <p>Encrypted databases are designed to fight against massive data breaches. They preserve database query functionalities over encrypted data directly without decryption. My research in this area focuses on four aspects: 1) enabling rich queries for encrypted databases [ESORICS'15], [IEEE TMM'16], [IEEE TIFS'17], [ACM AsiaCCS'19], 2) developing encrypted NoSQL data stores [ACM AsiaCCS'16], [ACM AsiaCCS'17], 3) designing efficient encrypted search schemes with less leakage [ACM CCS'18], [ACNS'20], [ACNS'21], [NDSS'21], and 4) exploring hardening techniques for encrypted databases [IEEE INFOCOM'19], [IEEE TKDE'21], [IEEE TIFS'21].</p>
+
                     <ul class="pub-list">
                         <li class="pub-item">
                             <div class="pub-venue">[IEEE TIFS'21]</div>
@@ -598,7 +216,7 @@
                             <div class="pub-venue">[ACNS'21]</div>
                             <div class="pub-title">Towards Efficient and Strong Backward Private Searchable Encryption with Secure Enclaves</div>
                             <div class="pub-authors">Viet Vo, Shangqi Lai, <strong>Xingliang Yuan</strong>, Joseph Liu, and Surya Nepal</div>
-                            <div class="pub-details">In the 19th International Conference on Applied Cryptography and Network Security, 2021 (First round acceptance ratio: 13/77= 16.8%).</div>
+                            <div class="pub-details">In the 19th International Conference on Applied Cryptography and Network Security, 2021 (First round acceptance ratio: 13/77 = 16.8%).</div>
                         </li>
                         <li class="pub-item">
                             <div class="pub-venue">[ACNS'20]</div>
@@ -657,19 +275,19 @@
                     </ul>
                 </div>
             </section>
-    </div>
-
-<footer class="footer">
-        <div class="container">
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">©Xingliang Yuan, Optimised by Cursor</p>
+</div>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-meta">Updated May 2026, Optimised by Codex</p>
+            </div>
         </div>
-    </footer>
-<script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
-            const menu = document.querySelector('.nav-menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        });
-    </script>
-</body>
-</html>
+        <p class="footer-note">This site acknowledges Aboriginal and Torres Strait Islander peoples as the Traditional Owners of the lands on which the University community learns and works.</p>
+    </div>
+</footer>
+
+            <script src="site.js" defer></script>
+        </body>
+        </html>

@@ -1,491 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xingliang Yuan, Associate Professor, ARC Future Fellow, The University of Melbourne">
-    <meta name="author" content="Xingliang Yuan">
-    <title>Teaching - Xingliang Yuan @ The University of Melbourne</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
-    
-    <style>
-
-        /* Modern Light Academic Theme */
-        :root {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8f9fa;
-            --bg-tertiary: #f1f3f5;
-            --bg-card: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #4a5568;
-            --text-tertiary: #718096;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --accent-light: #3b82f6;
-            --border: #e2e8f0;
-            --border-light: #f1f5f9;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
-            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-            --gradient-accent: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
-            --success: #10b981;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            font-size: 16px;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* Navigation */
-        .navbar {
-            background: var(--bg-card);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: var(--shadow-sm);
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            text-decoration: none;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-menu a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        .nav-menu a:hover,
-        .nav-menu a.active {
-            color: var(--accent);
-        }
-
-        .nav-menu a.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--gradient-accent);
-        }
-
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-primary);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 4rem 0 3rem;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .hero-text h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.75rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .hero-text .title {
-            font-size: 1.25rem;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero-text .affiliation {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .hero-text .affiliation a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .hero-text .affiliation a:hover {
-            color: var(--accent-hover);
-            text-decoration: underline;
-        }
-
-        .hero-text .email {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .hero-image {
-            text-align: center;
-        }
-
-        .hero-image img {
-            width: 100%;
-            max-width: 280px;
-            border-radius: 16px;
-            box-shadow: var(--shadow-lg);
-            border: 4px solid var(--bg-primary);
-        }
-
-        /* Content Sections */
-        .section {
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .section:last-child {
-            border-bottom: none;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 3px solid var(--accent);
-            display: inline-block;
-        }
-
-        .section-content {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            max-width: 900px;
-        }
-
-        .section-content p {
-            margin-bottom: 1.25rem;
-        }
-
-        .section-content a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1.5px solid transparent;
-            transition: border-color 0.2s ease;
-        }
-
-        .section-content a:hover {
-            border-bottom-color: var(--accent);
-        }
-
-        /* News Section */
-        .news-list {
-            list-style: none;
-        }
-
-        .news-item {
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--border-light);
-            display: flex;
-            gap: 1rem;
-        }
-
-        .news-item:last-child {
-            border-bottom: none;
-        }
-
-        .news-date {
-            color: var(--success);
-            font-weight: 600;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .news-text {
-            color: var(--text-secondary);
-            flex: 1;
-        }
-
-        .news-text a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .news-text a:hover {
-            text-decoration: underline;
-        }
-
-        /* Publications */
-        .pub-section {
-            margin-bottom: 3rem;
-        }
-
-        .pub-section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 2rem 0 1.5rem;
-            padding-left: 1rem;
-            border-left: 4px solid var(--accent);
-        }
-
-        .pub-list {
-            list-style: none;
-        }
-
-        .pub-item {
-            padding: 1.25rem 0;
-            border-bottom: 1px solid var(--border-light);
-        }
-
-        .pub-item:last-child {
-            border-bottom: none;
-        }
-
-        .pub-venue {
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-title {
-            color: var(--text-primary);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .pub-authors {
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-authors strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        .pub-details {
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            font-style: italic;
-        }
-
-        .pub-link {
-            margin-top: 0.5rem;
-            display: inline-block;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--bg-secondary);
-            padding: 2rem 0;
-            text-align: center;
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--bg-card);
-                flex-direction: column;
-                gap: 0;
-                padding: 1rem 0;
-                box-shadow: var(--shadow-lg);
-                border-bottom: 1px solid var(--border);
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .nav-menu li {
-                width: 100%;
-            }
-
-            .nav-menu a {
-                display: block;
-                padding: 0.75rem 2rem;
-                width: 100%;
-            }
-
-            .nav-menu a.active::after {
-                display: none;
-            }
-
-            .mobile-menu-toggle {
-                display: block;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .section {
-                padding: 2rem 0;
-            }
-
-            .news-item {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Selection */
-        ::selection {
-            background-color: rgba(37, 99, 235, 0.2);
-            color: var(--text-primary);
-        }
-    
-    </style>
-</head>
-
-<body>
-<nav class="navbar">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Teaching commitments for Xingliang Yuan across cybersecurity subjects at the University of Melbourne and Monash University.">
+            <meta name="author" content="Xingliang Yuan">
+            <meta name="theme-color" content="#0f2345">
+            <title>Teaching - Xingliang Yuan @ The University of Melbourne</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body class="page-teaching">
+            <a class="skip-link" href="#main">Skip to content</a>
+            <header class="site-header">
+    <div class="brand-bar">
+        <div class="container">
+            <div class="brand-unit">School of Computing and Information Systems</div>
+            <a class="brand-link" href="https://www.unimelb.edu.au" target="_blank" rel="noreferrer" aria-label="The University of Melbourne">
+                <img class="brand-logo" src="https://designsystem.web.unimelb.edu.au/static/img/logo.svg" alt="The University of Melbourne">
+            </a>
+        </div>
+    </div>
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Xingliang Yuan</a>
-            <button class="mobile-menu-toggle">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="teaching.html" class="active">Teaching</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="talk.html">Talks</a></li>
-                <li><a href="award.html">Awards</a></li>
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-name">Xingliang Yuan</span>
+            </a>
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-menu">
+                <li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="teaching.html" aria-current="page">Teaching</a></li><li><a href="service.html">Service</a></li><li><a href="talk.html">Talks</a></li><li><a href="award.html">Awards</a></li>
             </ul>
         </div>
     </nav>
+</header>
 
-    <div class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
-<section class="section"><div class="section-content">
-  
-
-  <!-- Services -->
-  <section class="section"><div class="section-content">
-    <h2 class="section-title">Teaching Commitments</h2>
-    
-
-    <ul class="square">
-            <b>@UniMelb:</b>
-                <li>INFO30006: Information Security and Privacy (UG), S2 2025, Lecturer</li>
-                <li>COMP90074: Web Security (PG), S2 2025, Cooridinator</li>
-                <li>COMP90074: Web Security (PG), S2 2024, Cooridinator and Lecturer</li>
-            </ul>
-
-            <b>@Monash:</b>
-            <ul class="square">
-                <li>FIT5124: Advanced Topics in Security (PG), S1 2021/2022, Lecturer</li>
-                <li>FIT5124: Emerging topics for cybersecurity in practice (PG), S1 2023/2024, Chief Examiner and Lecturer</li>
-                <li>FIT3031: Network Security (UG), S2 2019/2020/2021/2022, Chief Examiner and Lecturer; S2 2023, Chief Examiner</li>
-                <li>FIT5037: Network Security (PG), S2 2020/2021/2022/2023, Chief Examiner and Lecturer</li>
-                <li>FIT3173: Software Security (UG), S1 2018/2019/2020, Lecturer</li>
-            </ul>
-        </div>
-
-  
-
-<!-- End page content -->
-</div></section>
+            <section class="page-header">
+    <div class="container">
+        <h1 class="page-title">Teaching</h1>
     </div>
+</section>
 
-<footer class="footer">
-        <div class="container">
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">©Xingliang Yuan, Optimised by Cursor</p>
+            <main id="main" class="page-main">
+                <div class="container"><section class="section">
+    <div class="section-content">
+        <h2 class="section-title">Teaching Commitments</h2>
+        <div class="grouped-list"><p class="list-label">UniMelb</p><ul class="square"><li>INFO30006: Information Security and Privacy (UG), Semester 2 2025, Lecturer</li><li>COMP90074: Web Security (PG), Semester 2 2025, Coordinator</li><li>COMP90074: Web Security (PG), Semester 2 2024, Coordinator and Lecturer</li></ul></div><div class="grouped-list"><p class="list-label">Monash</p><ul class="square"><li>FIT5124: Advanced Topics in Security (PG), Semester 1 2021 and 2022, Lecturer</li><li>FIT5124: Emerging Topics for Cybersecurity in Practice (PG), Semester 1 2023 and 2024, Chief Examiner and Lecturer</li><li>FIT3031: Network Security (UG), Semester 2 2019 to 2022, Chief Examiner and Lecturer; Semester 2 2023, Chief Examiner</li><li>FIT5037: Network Security (PG), Semester 2 2020 to 2023, Chief Examiner and Lecturer</li><li>FIT3173: Software Security (UG), Semester 1 2018 to 2020, Lecturer</li></ul></div>
+    </div>
+</section>
+</div>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-meta">Updated May 2026, Optimised by Codex</p>
+            </div>
         </div>
-    </footer>
-<script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
-            const menu = document.querySelector('.nav-menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        });
-    </script>
-</body>
-</html>
+        <p class="footer-note">This site acknowledges Aboriginal and Torres Strait Islander peoples as the Traditional Owners of the lands on which the University community learns and works.</p>
+    </div>
+</footer>
+
+            <script src="site.js" defer></script>
+        </body>
+        </html>

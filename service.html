@@ -1,556 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xingliang Yuan, Associate Professor, ARC Future Fellow, The University of Melbourne">
-    <meta name="author" content="Xingliang Yuan">
-    <title>Services - Xingliang Yuan @ The University of Melbourne</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
-    
-    <style>
-
-        /* Modern Light Academic Theme */
-        :root {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8f9fa;
-            --bg-tertiary: #f1f3f5;
-            --bg-card: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #4a5568;
-            --text-tertiary: #718096;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --accent-light: #3b82f6;
-            --border: #e2e8f0;
-            --border-light: #f1f5f9;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
-            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-            --gradient-accent: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
-            --success: #10b981;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            font-size: 16px;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* Navigation */
-        .navbar {
-            background: var(--bg-card);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: var(--shadow-sm);
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            text-decoration: none;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-menu a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        .nav-menu a:hover,
-        .nav-menu a.active {
-            color: var(--accent);
-        }
-
-        .nav-menu a.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--gradient-accent);
-        }
-
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-primary);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 4rem 0 3rem;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .hero-text h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.75rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .hero-text .title {
-            font-size: 1.25rem;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero-text .affiliation {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .hero-text .affiliation a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .hero-text .affiliation a:hover {
-            color: var(--accent-hover);
-            text-decoration: underline;
-        }
-
-        .hero-text .email {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .hero-image {
-            text-align: center;
-        }
-
-        .hero-image img {
-            width: 100%;
-            max-width: 280px;
-            border-radius: 16px;
-            box-shadow: var(--shadow-lg);
-            border: 4px solid var(--bg-primary);
-        }
-
-        /* Content Sections */
-        .section {
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .section:last-child {
-            border-bottom: none;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 3px solid var(--accent);
-            display: inline-block;
-        }
-
-        .section-content {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            max-width: 900px;
-        }
-
-        .section-content p {
-            margin-bottom: 1.25rem;
-        }
-
-        .section-content a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1.5px solid transparent;
-            transition: border-color 0.2s ease;
-        }
-
-        .section-content a:hover {
-            border-bottom-color: var(--accent);
-        }
-
-        /* News Section */
-        .news-list {
-            list-style: none;
-        }
-
-        .news-item {
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--border-light);
-            display: flex;
-            gap: 1rem;
-        }
-
-        .news-item:last-child {
-            border-bottom: none;
-        }
-
-        .news-date {
-            color: var(--success);
-            font-weight: 600;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .news-text {
-            color: var(--text-secondary);
-            flex: 1;
-        }
-
-        .news-text a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .news-text a:hover {
-            text-decoration: underline;
-        }
-
-        /* Publications */
-        .pub-section {
-            margin-bottom: 3rem;
-        }
-
-        .pub-section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 2rem 0 1.5rem;
-            padding-left: 1rem;
-            border-left: 4px solid var(--accent);
-        }
-
-        .pub-list {
-            list-style: none;
-        }
-
-        .pub-item {
-            padding: 1.25rem 0;
-            border-bottom: 1px solid var(--border-light);
-        }
-
-        .pub-item:last-child {
-            border-bottom: none;
-        }
-
-        .pub-venue {
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-title {
-            color: var(--text-primary);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .pub-authors {
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-authors strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        .pub-details {
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            font-style: italic;
-        }
-
-        .pub-link {
-            margin-top: 0.5rem;
-            display: inline-block;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--bg-secondary);
-            padding: 2rem 0;
-            text-align: center;
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--bg-card);
-                flex-direction: column;
-                gap: 0;
-                padding: 1rem 0;
-                box-shadow: var(--shadow-lg);
-                border-bottom: 1px solid var(--border);
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .nav-menu li {
-                width: 100%;
-            }
-
-            .nav-menu a {
-                display: block;
-                padding: 0.75rem 2rem;
-                width: 100%;
-            }
-
-            .nav-menu a.active::after {
-                display: none;
-            }
-
-            .mobile-menu-toggle {
-                display: block;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .section {
-                padding: 2rem 0;
-            }
-
-            .news-item {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Selection */
-        ::selection {
-            background-color: rgba(37, 99, 235, 0.2);
-            color: var(--text-primary);
-        }
-    
-    </style>
-</head>
-
-<body>
-<nav class="navbar">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Professional service, editorial roles, reviewing, and academic leadership for Xingliang Yuan.">
+            <meta name="author" content="Xingliang Yuan">
+            <meta name="theme-color" content="#0f2345">
+            <title>Service - Xingliang Yuan @ The University of Melbourne</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body class="page-service">
+            <a class="skip-link" href="#main">Skip to content</a>
+            <header class="site-header">
+    <div class="brand-bar">
+        <div class="container">
+            <div class="brand-unit">School of Computing and Information Systems</div>
+            <a class="brand-link" href="https://www.unimelb.edu.au" target="_blank" rel="noreferrer" aria-label="The University of Melbourne">
+                <img class="brand-logo" src="https://designsystem.web.unimelb.edu.au/static/img/logo.svg" alt="The University of Melbourne">
+            </a>
+        </div>
+    </div>
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Xingliang Yuan</a>
-            <button class="mobile-menu-toggle">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="service.html" class="active">Services</a></li>
-                <li><a href="talk.html">Talks</a></li>
-                <li><a href="award.html">Awards</a></li>
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-name">Xingliang Yuan</span>
+            </a>
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-menu">
+                <li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html" aria-current="page">Service</a></li><li><a href="talk.html">Talks</a></li><li><a href="award.html">Awards</a></li>
             </ul>
         </div>
     </nav>
+</header>
 
-    <div class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
-<section class="section"><div class="section-content">
-  
-
-  <!-- Services -->
-  <section class="section"><div class="section-content">
-    <h2 class="section-title">Organising Committee</h2>
-    
-            <ul class="square">
-                <li>2025: <a href="https://raid2025.github.io" target="_blank">RAID</a> (General co-chair), IWQoS'25 (Registration and Finance Chair)
-                </li>   
-                <li>2024: <a href="https://icdcs2024.icdcs.org" target="_blank">IEEE ICDCS</a> (co-Chair for the Track on Security, Privacy, and Trust in Distributed Systems), IEEE PST (Privacy Track co-Chair), IEEE MSN (Security and Privacy Track co-Chair), WISE (Special Track co-Chair), <a href="https://lamps-ccs.com" target="_blank">LAMPS@CCS'24</a> (Program co-Chair)
-                </li>
-                <li>2023: <a href="https://asiaccs2023.org" target="_blank">ACM AsiaCCS</a> (Registration and Finance Co-Chair), <a href="https://asiaccs-sectl.github.io" target="_blank">SecTL (Co-located with ACM AsiaCCS 2023)</a> (Program Co-Chair)</li>
-                <li> 2022: <a href="https://sites.google.com/view/aisc2022/" target="_blank">AISC</a> (General Chair), <a href="http://nsclab.org/nss2022/index.html" target="_blank">NSS</a> (Program Co-Chair)
-                </li>
-                <li>2021: <a href="https://conference.cs.cityu.edu.hk/asiaccsscc/" target="_blank">ACM AsiaCCS-SBC</a> (Publicity Chair), <a href="https://qshine.eai-conferences.org/2021/" target="_blank">QSHINE</a> (Program Co-Chair), Adhocnet (Program Co-Chair), ACISP  (Online Conference Chair), IEEE Blockchain (Publication Co-Chair) 
-                </li>
-                <li>2020: ACISP (Online Conference Chair)</li>
-                <li>2019: IEEE IDSC (Experience and Practice Track Co-Chair), ProvSec (Publicity Co-Chair), BIMSec (Co-Chair)</li>
-            </ul>
-        </div>
-
-
-<section class="section"><div class="section-content">
-    <h2 class="section-title">Technical Program Committee Member</h2>
-    
-            <ul class="square">
-                <li>2026: USENIX Security, AsiaCCS, EuroS&P</li>
-                <li>2025: NDSS, IEEE S&P, USENIX Security, AsiaCCS, EuroS&P, ACM Web, ACISP, ACSAC</li>
-                <li>2024: ACM Web (Systems and Infrastructure for Web, Mobile, and WoT Track), ICLR, USENIX Security, SDM, IEEE EuroS&P, ACSAC</li>
-                <li>2023: ACM AsiaCCS, ACM Web (Security, Privacy & Trust Track), IEEE ICDCS (Blockchain Track), <a href="https://www.drivendata.org/competitions/98/nist-federated-learning-1/page/522/" target="_blank">PETs Prize Challenge</a>, ACM KDD, NeurIPS, ACM CCSW</li>
-                <li>2022: ACM AsiaCCS, ICICS, ACM KDD, IEEE Cloud, CANS, PST, IEEE MSN, ICISS, ISC</li>
-                <li>2021: ACM AsiaCCS, IEEE/ACM CCGrid, IEEE MSN, ICICS, IEEE Cloud</li>
-                <li>2020: SecureComm, IEEE Trustcom, QSHINE, NSS</li>
-                <li>...</li>             
-            </ul>
-        </div>
-
-<section class="section"><div class="section-content">
-    <h2 class="section-title">Editorship </h2>
-    
-            <ul class="square">
-                <li>Serve as an Area Editor (Security, Privacy, and Trust) of IEEE Transactions on Service Computing (TSC), July. 2025</li>
-                <li>Join the Editorial Board as Associate Editor of IEEE Transactions on Service Computing (TSC), Mar. 2024</li>
-                <li>Join the Editorial Board as Associate Editor of IEEE Transactions on Dependable and Secure Computing (TDSC), Jan. 2023</li>
-                <li>Guest Editor, Wireless Networks, 2022</li>
-            </ul>
-        </div>
-
-
-<section class="section"><div class="section-content">
-    <h2 class="section-title">Journal Reviewer </h2>
-    
-            <ul class="square">
-                <li>IEEE Transactions on Dependable and Secure Computing (TDSC)</li>
-                <li>IEEE Transactions on Information Forensics and Security (TIFS)</li>
-                <li>IEEE/ACM Transactions on Networking (TON)</li>
-                <li>IEEE Transactions on Knowledge and Data Engineering (TKDE)</li>
-                <li>IEEE Transactions on Parallel and Distributed Systems (TPDS)</li>
-                <li>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</li>
-                <li>IEEE Transactions on Computers (TC)</li>
-                <li>IEEE Transactions on Mobile Computing (TMC)</li>
-                <li>Proceeding of the IEEE </li>
-                <li>ACM Computing Surveys (CSUR)</li>
-                <li>ACM Transactions on Storage (TOS) </li>
-                <li>...</li>
-            </ul>
-        </div>
-
-  
-<section class="section"><div class="section-content">
-    <h2 class="section-title">Faculty Service </h2>
-    
-
-            <ul class="square">
-                    <b>@UniMelb:</b>
-                <li>Course Coordinator (Program Director) for Master of Cybersecurity Online, July 2025 - now</li>
-
-            </ul>
-
-            <ul class="square">
-                    <b>@Monash:</b>
-                <li>Course Director for Master of Cybersecurity, June 2022 - June 2024</li>
-                <li>Faculty Level-C Promotion Committee Member, 2023 - June 2024</li>
-                <li>Academic Representative at Faculty EDI Committee, June 2022 - Jan 2023</li>
-                <li>Director of Student Engagement, Jan 2020 - Dec 2022 </li>
-                <li>Deputy Course director for Master of Cybersecurity, Jan 2020 - May 2022</li>
-                <li>Faculty ECA Committee Member, Jan 2018 - Dec 2021</li>
-                <li>ECA Representative at Faculty Research Committee, Jan 2019 - Dec 2021</li>
-
-            </ul>
-        </div>
-<!-- End page content -->
-</div></section>
+            <section class="page-header">
+    <div class="container">
+        <h1 class="page-title">Service</h1>
     </div>
+</section>
 
-<footer class="footer">
-        <div class="container">
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">©Xingliang Yuan, Optimised by Cursor</p>
+            <main id="main" class="page-main">
+                <div class="container"><section class="section">
+    <div class="section-content">
+        <h2 class="section-title">Organising Committee</h2>
+        <div class="grouped-list"><ul class="square"><li>2025: <a href="https://raid2025.github.io" target="_blank" rel="noreferrer">RAID</a> (General Co-Chair), IWQoS 2025 (Registration and Finance Chair)</li><li>2024: <a href="https://icdcs2024.icdcs.org" target="_blank" rel="noreferrer">IEEE ICDCS</a> (Track Co-Chair, Security, Privacy, and Trust in Distributed Systems), IEEE PST (Privacy Track Co-Chair), IEEE MSN (Security and Privacy Track Co-Chair), WISE (Special Track Co-Chair), <a href="https://lamps-ccs.com" target="_blank" rel="noreferrer">LAMPS@CCS 2024</a> (Program Co-Chair)</li><li>2023: <a href="https://asiaccs2023.org" target="_blank" rel="noreferrer">ACM AsiaCCS</a> (Registration and Finance Co-Chair), <a href="https://asiaccs-sectl.github.io" target="_blank" rel="noreferrer">SecTL 2023</a> (Program Co-Chair)</li><li>2022: <a href="https://sites.google.com/view/aisc2022/" target="_blank" rel="noreferrer">AISC</a> (General Chair), <a href="http://nsclab.org/nss2022/index.html" target="_blank" rel="noreferrer">NSS</a> (Program Co-Chair)</li><li>2021: <a href="https://conference.cs.cityu.edu.hk/asiaccsscc/" target="_blank" rel="noreferrer">ACM AsiaCCS-SBC</a> (Publicity Chair), <a href="https://qshine.eai-conferences.org/2021/" target="_blank" rel="noreferrer">QSHINE</a> (Program Co-Chair), AdHocNets (Program Co-Chair), ACISP (Online Conference Chair), IEEE Blockchain (Publication Co-Chair)</li><li>2020: ACISP (Online Conference Chair)</li><li>2019: IEEE IDSC (Experience and Practice Track Co-Chair), ProvSec (Publicity Co-Chair), BIMSec (Co-Chair)</li></ul></div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-content">
+        <h2 class="section-title">Technical Program Committee</h2>
+        <div class="grouped-list"><ul class="square"><li>2027: USENIX Security, IEEE S&P</li><li>2026: USENIX Security, ACM AsiaCCS, IEEE EuroS&P, ACSAC</li><li>2025: NDSS, IEEE S&P, USENIX Security, ACM AsiaCCS, IEEE EuroS&P, ACM Web, ACISP, ACSAC</li><li>2024: ACM Web (Systems and Infrastructure for Web, Mobile, and WoT Track), ICLR, USENIX Security, SDM, IEEE EuroS&P, ACSAC</li><li>2023: ACM AsiaCCS, ACM Web (Security, Privacy, and Trust Track), IEEE ICDCS (Blockchain Track), <a href="https://www.drivendata.org/competitions/98/nist-federated-learning-1/page/522/" target="_blank" rel="noreferrer">PETs Prize Challenge</a>, ACM KDD, NeurIPS, ACM CCSW</li><li>2022: ACM AsiaCCS, ICICS, ACM KDD, IEEE Cloud, CANS, PST, IEEE MSN, ICISS, ISC</li><li>2021: ACM AsiaCCS, IEEE/ACM CCGrid, IEEE MSN, ICICS, IEEE Cloud</li><li>2020: SecureComm, IEEE TrustCom, QSHINE, NSS</li></ul></div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-content">
+        <h2 class="section-title">Editorship</h2>
+        <div class="grouped-list"><ul class="square"><li>Area Editor (Security, Privacy, and Trust), IEEE Transactions on Service Computing, from July 2025</li><li>Associate Editor, IEEE Transactions on Service Computing, from March 2024</li><li>Associate Editor, IEEE Transactions on Dependable and Secure Computing, from January 2023</li><li>Guest Editor, Wireless Networks, 2022</li></ul></div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-content">
+        <h2 class="section-title">Journal Reviewing</h2>
+        <div class="grouped-list"><ul class="square"><li>IEEE Transactions on Dependable and Secure Computing (TDSC)</li><li>IEEE Transactions on Information Forensics and Security (TIFS)</li><li>IEEE/ACM Transactions on Networking (ToN)</li><li>IEEE Transactions on Knowledge and Data Engineering (TKDE)</li><li>IEEE Transactions on Parallel and Distributed Systems (TPDS)</li><li>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</li><li>IEEE Transactions on Computers (TC)</li><li>IEEE Transactions on Mobile Computing (TMC)</li><li>Proceedings of the IEEE</li><li>ACM Computing Surveys (CSUR)</li><li>ACM Transactions on Storage (TOS)</li></ul></div>
+    </div>
+</section>
+<section class="section">
+    <div class="section-content">
+        <h2 class="section-title">Faculty Service</h2>
+        <div class="grouped-list"><p class="list-label">UniMelb</p><ul class="square"><li>Course Coordinator (Program Director), Master of Cybersecurity Online, from July 2025</li></ul></div><div class="grouped-list"><p class="list-label">Monash</p><ul class="square"><li>Course Director, Master of Cybersecurity, June 2022 to June 2024</li><li>Faculty Level C Promotion Committee Member, 2023 to June 2024</li><li>Academic Representative, Faculty EDI Committee, June 2022 to January 2023</li><li>Director of Student Engagement, January 2020 to December 2022</li><li>Deputy Course Director, Master of Cybersecurity, January 2020 to May 2022</li><li>Faculty ECA Committee Member, January 2018 to December 2021</li><li>ECA Representative, Faculty Research Committee, January 2019 to December 2021</li></ul></div>
+    </div>
+</section>
+</div>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-meta">Updated May 2026, Optimised by Codex</p>
+            </div>
         </div>
-    </footer>
-<script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
-            const menu = document.querySelector('.nav-menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        });
-    </script>
-</body>
-</html>
+        <p class="footer-note">This site acknowledges Aboriginal and Torres Strait Islander peoples as the Traditional Owners of the lands on which the University community learns and works.</p>
+    </div>
+</footer>
+
+            <script src="site.js" defer></script>
+        </body>
+        </html>

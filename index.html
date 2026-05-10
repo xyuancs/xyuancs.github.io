@@ -1,491 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xingliang Yuan, Associate Professor, ARC Future Fellow, The University of Melbourne">
-    <meta name="author" content="Xingliang Yuan">
-    <title>Xingliang Yuan @ The University of Melbourne</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap">
-    <style>
-        /* Modern Light Academic Theme */
-        :root {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8f9fa;
-            --bg-tertiary: #f1f3f5;
-            --bg-card: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #4a5568;
-            --text-tertiary: #718096;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --accent-light: #3b82f6;
-            --border: #e2e8f0;
-            --border-light: #f1f5f9;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
-            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-            --gradient-accent: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
-            --success: #10b981;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            font-size: 16px;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* Navigation */
-        .navbar {
-            background: var(--bg-card);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: var(--shadow-sm);
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            text-decoration: none;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-menu a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        .nav-menu a:hover,
-        .nav-menu a.active {
-            color: var(--accent);
-        }
-
-        .nav-menu a.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--gradient-accent);
-        }
-
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-primary);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 4rem 0 3rem;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .hero-text h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.75rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .hero-text .title {
-            font-size: 1.25rem;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero-text .affiliation {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .hero-text .affiliation a {
-            color: var(--accent);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .hero-text .affiliation a:hover {
-            color: var(--accent-hover);
-            text-decoration: underline;
-        }
-
-        .hero-text .email {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .hero-image {
-            text-align: center;
-        }
-
-        .hero-image img {
-            width: 100%;
-            max-width: 280px;
-            border-radius: 16px;
-            box-shadow: var(--shadow-lg);
-            border: 4px solid var(--bg-primary);
-        }
-
-        /* Content Sections */
-        .section {
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .section:last-child {
-            border-bottom: none;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 3px solid var(--accent);
-            display: inline-block;
-        }
-
-        .section-content {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            max-width: 900px;
-        }
-
-        .section-content p {
-            margin-bottom: 1.25rem;
-        }
-
-        .section-content a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1.5px solid transparent;
-            transition: border-color 0.2s ease;
-        }
-
-        .section-content a:hover {
-            border-bottom-color: var(--accent);
-        }
-
-        /* News Section */
-        .news-list {
-            list-style: none;
-        }
-
-        .news-item {
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--border-light);
-            display: flex;
-            gap: 1rem;
-        }
-
-        .news-item:last-child {
-            border-bottom: none;
-        }
-
-        .news-date {
-            color: var(--success);
-            font-weight: 600;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .news-text {
-            color: var(--text-secondary);
-            flex: 1;
-        }
-
-        .news-text a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .news-text a:hover {
-            text-decoration: underline;
-        }
-
-        /* Publications */
-        .pub-section {
-            margin-bottom: 3rem;
-        }
-
-        .pub-section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 2rem 0 1.5rem;
-            padding-left: 1rem;
-            border-left: 4px solid var(--accent);
-        }
-
-        .pub-list {
-            list-style: none;
-        }
-
-        .pub-item {
-            padding: 1.25rem 0;
-            border-bottom: 1px solid var(--border-light);
-        }
-
-        .pub-item:last-child {
-            border-bottom: none;
-        }
-
-        .pub-venue {
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-title {
-            color: var(--text-primary);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .pub-authors {
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-authors strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        .pub-details {
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            font-style: italic;
-        }
-
-        .pub-link {
-            margin-top: 0.5rem;
-            display: inline-block;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--bg-secondary);
-            padding: 2rem 0;
-            text-align: center;
-            color: var(--text-tertiary);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--bg-card);
-                flex-direction: column;
-                gap: 0;
-                padding: 1rem 0;
-                box-shadow: var(--shadow-lg);
-                border-bottom: 1px solid var(--border);
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .nav-menu li {
-                width: 100%;
-            }
-
-            .nav-menu a {
-                display: block;
-                padding: 0.75rem 2rem;
-                width: 100%;
-            }
-
-            .nav-menu a.active::after {
-                display: none;
-            }
-
-            .mobile-menu-toggle {
-                display: block;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .section {
-                padding: 2rem 0;
-            }
-
-            .news-item {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Selection */
-        ::selection {
-            background-color: rgba(37, 99, 235, 0.2);
-            color: var(--text-primary);
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Xingliang Yuan, Associate Professor, ARC Future Fellow, The University of Melbourne.">
+            <meta name="author" content="Xingliang Yuan">
+            <meta name="theme-color" content="#0f2345">
+            <title>Xingliang Yuan @ The University of Melbourne</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body class="page-home">
+            <a class="skip-link" href="#main">Skip to content</a>
+            <header class="site-header">
+    <div class="brand-bar">
+        <div class="container">
+            <div class="brand-unit">School of Computing and Information Systems</div>
+            <a class="brand-link" href="https://www.unimelb.edu.au" target="_blank" rel="noreferrer" aria-label="The University of Melbourne">
+                <img class="brand-logo" src="https://designsystem.web.unimelb.edu.au/static/img/logo.svg" alt="The University of Melbourne">
+            </a>
+        </div>
+    </div>
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Xingliang Yuan</a>
-            <button class="mobile-menu-toggle">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="talk.html">Talks</a></li>
-                <li><a href="award.html">Awards</a></li>
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-name">Xingliang Yuan</span>
+            </a>
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-menu">
+                <li><a href="index.html" aria-current="page">Home</a></li><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html">Service</a></li><li><a href="talk.html">Talks</a></li><li><a href="award.html">Awards</a></li>
             </ul>
         </div>
     </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Xingliang Yuan</h1>
-                    <div class="title">Associate Professor, ARC Future Fellow</div>
-                    <div class="affiliation">
-                        <a href="https://brokenassumptions.org" target="_blank">Cybersecurity Group</a><br>
-                        <a href="https://cis.unimelb.edu.au" target="_blank">School of Computing and Information Systems</a><br>
-                        <a href="https://www.unimelb.edu.au" target="_blank">The University of Melbourne</a>
-                    </div>
-                    <div class="email">Email: xingliang.yuan [at] unimelb.edu.au</div>
+            <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Xingliang Yuan</h1>
+                <div class="title">Associate Professor, ARC Future Fellow</div>
+                <div class="affiliation">
+                    <a href="https://brokenassumptions.org" target="_blank" rel="noreferrer">Cybersecurity Group</a><br>
+                    <a href="https://cis.unimelb.edu.au" target="_blank" rel="noreferrer">School of Computing and Information Systems</a><br>
+                    <a href="https://www.unimelb.edu.au" target="_blank" rel="noreferrer">The University of Melbourne</a>
                 </div>
-                <div class="hero-image">
-                    <img src="./xyuan.jpg" alt="Xingliang Yuan">
+                <div class="email">Email: xingliang.yuan [at] unimelb.edu.au</div>
+                <div class="hero-links">
+                    <a class="button-link primary" href="research.html">View research</a>
+                    <a class="button-link secondary" href="people.html">Research group</a>
+                    <a class="button-link secondary" href="mailto:xingliang.yuan@unimelb.edu.au">Contact</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="./xyuan.jpg" alt="Portrait of Xingliang Yuan" loading="eager" decoding="async">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Overview Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Overview</h2>
-            <div class="section-content">
-                <p>I am an Associate Professor in the School of Computing and Information Systems at the University of Melbourne and an ARC Future Fellow. I am also the Course Director for the <a href="https://onlineunimelb.edu.au/ppc/master-cyber-security" target="_blank">Master of Cybersecurity</a> at UniMelb. Before joining UniMelb, I was a faculty member at Faculty of IT, Monash University from 2017 to 2024. I have broad interests in computer security, particularly in secure networked systems and trustworthy ML/AI. </p>
-
-                <p>I am currently working on the following areas. </p>
-
-                <p><strong>Encrypted Data Processing Systems:</strong> Designing and hardening encrypted data processing systems for real-world deployment, including 1) improved scalability, functionality, and verifiablity of oblivious data storage, 2) fine-grained, automatic leakage monitoring and on-the-fly defense for searchable encryption, and 3) their applications to large-scale systems such as CDN, DNS, and RAGs. </p>
-
-                <p><strong>Privacy-Preserving Machine Learning:</strong> Designing MPC protocols tailored for modern deep learning models and workloads, including 1) scalable, versatile, and leakage-free deep graph learning, 2) efficient inference and training for large-scale models, 3) its interplay with complementary techniques for defeating privacy inference and adversarial attacks within encrypted domains. </p>
-
-                <p><strong>Trustworthy Deep Learning:</strong> Investigating security and privacy issues in deep learning systems to build practical safeguards 1) inference attacks and defenses in deep graph learning, 2) machine unlearning and their applications in FL, GNNs, and LLMs, 3) model stealing and its mitigation in on-device ML. </p>
-
-
-                <p>I am also interested in LLM safety and agentic AI security recently. My past research summary can be found <a href="research.html">here</a>.</p>
-
-                <p>I am always looking for self-motivated students. Please email me your CV, transcript, research statement (no more than 200 words), and english test score. Information on UniMelb PhD admission and scholarships can be found <a href="https://study.unimelb.edu.au/find/courses/graduate/doctor-of-philosophy-engineering-and-it/entry-requirements/" target="_blank">here</a>, <a href="https://eng.unimelb.edu.au/research/graduate-research/industry-phd-and-internships-program" target="_blank">here</a>, <a href="https://www.csiro.au/en/careers/Scholarships-student-opportunities/Postgraduate-programs-and-Scholarships/Data61-scholarships" target="_blank">here</a>, and <a href="https://xyuancs.github.io/PhD-adv.md" target="_blank">here</a>.</p>
-            </div>
+            <main id="main" class="page-main">
+                <section class="section">
+    <div class="container">
+        <h2 class="section-title">Overview</h2>
+        <div class="section-content">
+            <p>I am an Associate Professor in the School of Computing and Information Systems at the University of Melbourne and an ARC Future Fellow. I am also the Course Director for the <a href="https://onlineunimelb.edu.au/ppc/master-cyber-security" target="_blank" rel="noreferrer">Master of Cybersecurity</a>. Before joining the University of Melbourne, I was a faculty member in the Faculty of IT at Monash University from 2017 to 2024.</p>
+            <p>My work sits broadly in computer security, with a particular focus on secure networked systems, encrypted data processing, trustworthy machine learning, and the security of modern AI deployment.</p>
+            <p>I am always interested in hearing from strong prospective students. Please email your CV, transcript, research statement (no more than 200 words), and English test score. Information on UniMelb PhD admission and scholarships can be found <a href="https://study.unimelb.edu.au/find/courses/graduate/doctor-of-philosophy-engineering-and-it/entry-requirements/" target="_blank" rel="noreferrer">here</a>, <a href="https://eng.unimelb.edu.au/research/graduate-research/industry-phd-and-internships-program" target="_blank" rel="noreferrer">here</a>, <a href="https://www.csiro.au/en/careers/Scholarships-student-opportunities/Postgraduate-programs-and-Scholarships/Data61-scholarships" target="_blank" rel="noreferrer">here</a>, and <a href="https://xyuancs.github.io/PhD-adv.md" target="_blank" rel="noreferrer">here</a>.</p>
         </div>
-    </section>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Research Themes</h2>
+        <div class="section-content">
+            <p>My current research agenda spans cryptographic systems, privacy-preserving learning, and the safeguards needed to deploy AI systems responsibly.</p>
+        </div>
+        <div class="key-focus-grid">
+            <article class="info-card">
+                <h3>Encrypted data processing systems</h3>
+                <p>Scalable and verifiable encrypted storage, leakage monitoring of searchable encryption schemes, and their deployment in large-scale systems such as CDN, DNS, and RAG pipelines.</p>
+            </article>
+            <article class="info-card">
+                <h3>Privacy-preserving machine learning</h3>
+                <p>Tailored MPC protocols for modern deep learning workloads, such as secure inference and training, with cryptographic guarantees.</p>
+            </article>
+            <article class="info-card">
+                <h3>Trustworthy and secure AI</h3>
+                <p>Machine unlearning, privacy inference defences, model stealing mitigation, LLM safety, and agentic system security.</p>
+            </article>
+        </div>
+    </div>
+</section>
 
-    <!-- News Section -->
-    <section class="section">
+<section class="section">
         <div class="container">
             <h2 class="section-title">News</h2>
             <ul class="news-list">
@@ -495,7 +111,7 @@
                 </li>
                 <li class="news-item">
                     <span class="news-date">[Dec'25]</span>
-                    <div class="news-text">I co-organised <a href="https://realmpc2025.github.io" target="_blank">the Workshop on Secure Collaborative Computing at Scale</a> at The University of Melbourne.</div>
+                    <div class="news-text">I co-organised <a href="https://realmpc2025.github.io" target="_blank" rel="noreferrer">the Workshop on Secure Collaborative Computing at Scale</a> at The University of Melbourne.</div>
                 </li>
                 <li class="news-item">
                     <span class="news-date">[Dec'25]</span>
@@ -523,7 +139,7 @@
                 </li>
                 <li class="news-item">
                     <span class="news-date">[Nov'24]</span>
-                    <div class="news-text">I will co-organise <a href="https://digital-trust-symposium.github.io/2025/" target="_blank">the Second Symposium on Digital Trust</a> at Nanyang Technological University.</div>
+                    <div class="news-text">I will co-organise <a href="https://digital-trust-symposium.github.io/2025/" target="_blank" rel="noreferrer">the Second Symposium on Digital Trust</a> at Nanyang Technological University.</div>
                 </li>
                 <li class="news-item">
                     <span class="news-date">[Nov'24]</span>
@@ -531,7 +147,7 @@
                 </li>
                 <li class="news-item">
                     <span class="news-date">[Nov'24]</span>
-                    <div class="news-text">I will co-organise <a href="https://raid2025.github.io" target="_blank">RAID'25</a> as a general co-chair.</div>
+                    <div class="news-text">I will co-organise <a href="https://raid2025.github.io" target="_blank" rel="noreferrer">RAID'25</a> as a general co-chair.</div>
                 </li>
                 <li class="news-item">
                     <span class="news-date">[Jul'24]</span>
@@ -577,12 +193,11 @@
         </div>
     </section>
 
-    <!-- Publications Section -->
-    <section class="section">
+<section class="section">
         <div class="container">
             <h2 class="section-title">Recent Publications</h2>
             <div class="section-content">
-                <p>My full publication list can be found at <a href="https://dblp.org/pid/21/8884.html" target="_blank">DBLP</a> and <a href="https://scholar.google.com.hk/citations?user=81yWaCoAAAAJ" target="_blank">Google Scholar</a>.</p>
+                <p>My full publication list can be found at <a href="https://dblp.org/pid/21/8884.html" target="_blank" rel="noreferrer">DBLP</a> and <a href="https://scholar.google.com.hk/citations?user=81yWaCoAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>.</p>
             </div>
 
             <div class="pub-section">
@@ -802,20 +417,18 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p style="margin-top: 0.5rem; font-size: 0.85rem;">©Xingliang Yuan, Optimised by Cursor</p>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-meta">Updated May 2026, Optimised by Codex</p>
+            </div>
         </div>
-    </footer>
+        <p class="footer-note">This site acknowledges Aboriginal and Torres Strait Islander peoples as the Traditional Owners of the lands on which the University community learns and works.</p>
+    </div>
+</footer>
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
-            const menu = document.querySelector('.nav-menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        });
-    </script>
-</body>
-</html>
+            <script src="site.js" defer></script>
+        </body>
+        </html>
