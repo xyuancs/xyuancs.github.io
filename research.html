@@ -46,9 +46,20 @@
     </div>
 </section>
 
+            <div class="section-nav-wrap">
+                <div class="container">
+                    <nav class="section-nav" aria-label="On this page">
+                        <a href="#research-areas">Areas</a>
+                        <a href="#secure-network-functions">Secure NFaaS</a>
+                        <a href="#trustworthy-ml">Trustworthy ML</a>
+                        <a href="#encrypted-databases">Encrypted DB</a>
+                    </nav>
+                </div>
+            </div>
+
             <main id="main" class="page-main">
                 <div class="container">
-<section class="section">
+<section class="section" id="research-areas">
                 <h2 class="section-title">Research Areas</h2>
                 <div class="info-grid">
                     <article class="info-card">
@@ -66,7 +77,7 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="secure-network-functions">
                 <h2 class="section-title">Secure Network Functions as a Service (2016 - Present)</h2>
                 <div class="section-content">
                     <p>Modern enterprise networks heavily rely on network functions for advanced traffic processing such as deep packet inspection, traffic classification, and load balancing. Recent advances in Network Function Virtualisation (NFV) have pushed forward the paradigm of migrating in-house network functions to third-party cloud providers as software-based services for reduced cost and increased scalability. Despite its benefits, such a new service model also raises security and privacy concerns, as traffic is now redirected and processed in an untrusted environment. My research in this area focuses on two directions: 1) enabling ubiquitous network functions over encrypted network traffic via practical cryptographic protocols [IEEE INFOCOM'16], [IEEE TDSC'21] or confidential computing [ACM CCS'19], [NDSS'21], 2) providing assurance for network function execution [IEEE ICNP'16], [ACM/IEEE ToN'18].</p>
@@ -118,7 +129,7 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="trustworthy-ml">
                 <h2 class="section-title">Trustworthy Machine Learning (2019 - Present)</h2>
                 <div class="section-content">
                     <p>Due to increasing popularity and rapid advancement of deep learning, public cloud service providers are promoting Machine Learning as a Service (MLaaS), e.g., AWS SageMaker. In the meantime, security and privacy issues of machine learning models, algorithms, and services are not fully understood and addressed in academia and industry. My research in this area focuses on three directions: 1) designing lightweight privacy-preserving machine learning systems [ESORICS'21], [IEEE TIFS'21], [IEEE TDSC'22-a], [IOS JCS], 2) investigating adversarial attacks and defenses on emerging ML paradigm like Graph Neural Networks (GNN) [ACM AsiaCCS'21], [IEEE ICDM'21], [ACM CIKM'21], transfer learning [IEEE TDSC'22-b], and 3) devising secure and efficient federated learning algorithms [IEEE INFOCOM'22], [IEEE TDSC'22-c].</p>
@@ -188,7 +199,7 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="encrypted-databases">
                 <h2 class="section-title">Encrypted and Queryable Databases (2014 - Present)</h2>
                 <div class="section-content">
                     <p>Encrypted databases are designed to fight against massive data breaches. They preserve database query functionalities over encrypted data directly without decryption. My research in this area focuses on four aspects: 1) enabling rich queries for encrypted databases [ESORICS'15], [IEEE TMM'16], [IEEE TIFS'17], [ACM AsiaCCS'19], 2) developing encrypted NoSQL data stores [ACM AsiaCCS'16], [ACM AsiaCCS'17], 3) designing efficient encrypted search schemes with less leakage [ACM CCS'18], [ACNS'20], [ACNS'21], [NDSS'21], and 4) exploring hardening techniques for encrypted databases [IEEE INFOCOM'19], [IEEE TKDE'21], [IEEE TIFS'21].</p>
