@@ -61,7 +61,7 @@ if (menuToggle && navMenu) {
 
 const revealTargets = [
     ...document.querySelectorAll(
-        ".page-header, .section-nav-wrap, .hero-text, .hero-image, .section, .info-card, .news-item, .pub-item, .grouped-list"
+        ".hero-image, .info-card, .news-item, .pub-item, .grouped-list"
     ),
 ];
 
@@ -89,8 +89,8 @@ if (prefersReducedMotion.matches || !("IntersectionObserver" in window)) {
             });
         },
         {
-            threshold: 0.14,
-            rootMargin: "0px 0px -10% 0px",
+            threshold: 0.01,
+            rootMargin: "0px 0px -6% 0px",
         }
     );
 
