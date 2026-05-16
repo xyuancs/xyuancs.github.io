@@ -781,15 +781,6 @@ strong {
     transform: translateY(0);
 }
 
-.site-header.is-scrolled .brand-bar .container {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-}
-
-.site-header.is-scrolled .nav-container {
-    min-height: 4.3rem;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;

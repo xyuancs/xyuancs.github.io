@@ -28,8 +28,13 @@ const syncChromeState = () => {
 };
 
 syncChromeState();
-window.addEventListener("scroll", syncChromeState, { passive: true });
+window.addEventListener("scroll", syncHeaderState, { passive: true });
 window.addEventListener("resize", syncChromeState);
+window.addEventListener("load", syncLayoutMetrics);
+
+if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(syncLayoutMetrics);
+}
 
 if (menuToggle && navMenu) {
     const closeMenu = () => {
